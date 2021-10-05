@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Philosopher";
+  src: url('./fonts/Philosopher-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url('./fonts/Mulish-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url('./fonts/Mulish-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
