@@ -24,3 +24,13 @@
 
 /* footer */
 @import url(../blocks/footer/footer.css);
+/* welcome */
+@import url(../blocks/welcome/__title/welcome__title.css);
+@import url(../blocks/welcome/__image-title/welcome__image-title.css);
+@import url(../blocks/welcome/__image/welcome__image.css);
+@import url(../blocks/welcome/__toggle-container/welcome__toggle-container.css);
+@import url(../blocks/welcome/__toggle-dot/welcome__toggle-dot.css);
+
+/* welcome */
+@import url(../blocks/welcome/__button/welcome__button.css);
+
