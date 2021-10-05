@@ -1,3 +1,5 @@
 .header__link {
-  
+  text-decoration: none;
+  color: black;
+  padding-right: 50px;
 }
