@@ -1,3 +1,9 @@
 .welcome__title {
-  
+  width: 755px;
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 80px;
+  z-index: 100;
+  margin: 100px 0 37px 0;
+  text-transform: uppercase;
 }
