@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Jam</title>
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
     <header class="header">
-      <img class="header__logo">
       <nav class="header__nav">
-        <a class="header__link" href="#about">about</a>
-        <a class="header__link" href="#menu">menu</a>
-        <a class="header__link" href="#own-dish">own dish</a>
+        <a class="header__link" href="#about">About</a>
+        <a class="header__link" href="#menu">Menu</a>
+        <a class="header__link" href="#own-dish">Own Dish</a>
       </nav>
+      <div class="header__logo"></div>
+      <div class="header__info">
+        <p class="header__info-number">8-700-20-10</p>
+        <p class="header__info-hours">Every day from 8 to 22</p>
+      </div>
     </header>
     <main class="main">
       <section class="welcome">
@@ -23,14 +27,35 @@
         <img class="welcome__image" src="./images/welcome__img_1.png">
         <button class="welcome__button" type="button">learn more</button>
         <div class="welcome__toggle-container">
-          <svg class="welcome__toggle-dot" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7" cy="7" r="7" fill="#F0935F"/>
+          <svg
+            class="welcome__toggle-dot"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="7" cy="7" r="7" fill="#F0935F" />
           </svg>
-          <svg class="welcome__toggle-dot" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF"/>
+          <svg
+            class="welcome__toggle-dot"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
-          <svg class="welcome__toggle-dot" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF"/>
+          <svg
+            class="welcome__toggle-dot"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
         </div>
       </section>
@@ -63,8 +88,6 @@
         <img class="own-dish__image" src="./images/own-dish__img.png">
       </section>
     </main>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>
