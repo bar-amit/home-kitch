@@ -66,6 +66,10 @@
 
 /* footer */
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__icon/footer__icon.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
 
 /* welcome */
 @import url(../blocks/welcome/__price/welcome__price.css);
