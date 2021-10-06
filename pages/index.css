@@ -45,6 +45,16 @@
 @import url(../blocks/own-dish/__resend-button/own-dish__resend-button.css);
 @import url(../blocks/own-dish/__image/own-dish__image.css);
 
+/* chefs */
+@import url(../blocks/chefs/chefs.css);
+@import url(../blocks/chefs/__title/chefs__title.css);
+@import url(../blocks/chefs/__subtitle/chefs__subtitle.css);
+@import url(../blocks/chefs/__carousel/chefs__carousel.css);
+@import url(../blocks/chefs/__card/chefs__card.css);
+@import url(../blocks/chefs/__image/chefs__image.css);
+@import url(../blocks/chefs/__name/chefs__name.css);
+@import url(../blocks/chefs/__paragraph/chefs__paragraph.css);
+
 /* footer */
 @import url(../blocks/footer/footer.css);
 
