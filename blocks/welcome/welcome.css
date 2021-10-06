@@ -1,11 +1,12 @@
 .welcome {
-  height: calc(100vh - 120px);
+  max-height: calc(100vh - 120px);
   background-color: #030303;
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
-  padding-left: 165px;
+  padding: 100px 0 105px 165px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: left;
 }
