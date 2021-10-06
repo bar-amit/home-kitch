@@ -1,0 +1,5 @@
+.own-dish__submit-message_hidden {
+  visibility: hidden;
+  position: fixed;
+  right: -100%;
+}
