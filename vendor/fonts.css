@@ -13,3 +13,8 @@
   src: url('./fonts/Mulish-Regular.woff2') format('woff2');
   font-weight: 400;
 }
+@font-face {
+  font-family: "Nunito";
+  src: url('./fonts/Nunito-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+}
