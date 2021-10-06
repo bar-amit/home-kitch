@@ -31,10 +31,25 @@
 
 /* own-dish */
 @import url(../blocks/own-dish/own-dish.css);
+@import url(../blocks/own-dish/__title/own-dish__title.css);
+@import url(../blocks/own-dish/__subtitle/own-dish__subtitle.css);
+@import url(../blocks/own-dish/__paragraph/own-dish__paragraph.css);
+@import url(../blocks/own-dish/__form/own-dish__form.css);
+@import url(../blocks/own-dish/__input/own-dish__input.css);
+@import url(../blocks/own-dish/__button/own-dish__button.css);
+@import url(../blocks/own-dish/__label/own-dish__label.css);
+@import url(../blocks/own-dish/__submit-message/own-dish__submit-message.css);
+@import url(../blocks/own-dish/__message/own-dish__message.css);
+@import url(../blocks/own-dish/__resend-button/own-dish__resend-button.css);
+@import url(../blocks/own-dish/__image/own-dish__image.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);
+
 /* welcome */
 @import url(../blocks/welcome/__price/welcome__price.css);
 @import url(../blocks/welcome/__price-tag/welcome__price-tag.css);
 
+/* modifiers */
+@import url(../blocks/own-dish/__form/_hidden/own-dish__form_hidden.css);
+@import url(../blocks/own-dish/__submit-message/_hidden/own-dish__submit-message_hidden.css);
