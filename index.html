@@ -21,10 +21,11 @@
     </header>
     <main class="main">
       <section class="welcome">
-        <h1 class="welcome__title">Try your favorite childhood dishes</h1>
-        <h3 class="welcome__image-title">Salmon pie. From Aunt Betty. Brescia, Italy.</h3>
-        <img class="welcome__image" src="./images/welcome__img_1.png" />
-        <button class="welcome__button">learn more</button>
+        <h1 class="welcome__title"> Try your favorite childhood dishes</h1>
+        <p class="welcome__image-title">Salmon pie. From Aunt Betty. Brescia, Italy.</p>
+        <p class="welcome__price">From <span class="welcome__price-tag">35&#36;</span></p>
+        <img class="welcome__image" src="./images/welcome__img_1.png">
+        <button class="welcome__button" type="button">learn more</button>
         <div class="welcome__toggle-container">
           <svg
             class="welcome__toggle-dot"
@@ -58,9 +59,34 @@
           </svg>
         </div>
       </section>
-      <section class="about" id="about"></section>
-      <section class="menu" id="menu"></section>
-      <section class="own-dish" id="#own-dish"></section>
+      <section class="about" id="about">
+
+      </section>
+      <section class="menu" id="menu">
+
+      </section>
+      <section class="own-dish" id="#own-dish">
+        <div class="own-dish__column">
+          <h2 class="own-dish__title">Make your own childhood dish.</h2>
+          <h3 class="own-dish__subtitle">You’re telling us  -  We’re cooking and deliver</h3>
+          <p class="own-dish__paragraph">We employ professional chefs, experts in all world cuisines. Leave your contacts, our experts will contact you and will be able to restore and create for you your favorite dish from childhood. If necessary, we can even contact your grandmother in the village to find out the subtleties of the recipe.</p>
+          <p class="own-dish__paragraph">After we restore your signature dish, you can order it using a unique link and share it with friends.</p>
+          <p class="own-dish__paragraph">If your dish is ordered more than 10 times, we will be able to consider it for inclusion in our main menu. Then you will be able to receive royalties from the sale of the dish.</p>
+          <form class="own-dish__form">
+            <input class="own-dish__input" name="user-name" placeholder="Name..."></input>
+            <input class="own-dish__input" name="phone" placeholder="Phone..."></input>
+            <button class="own-dish__button" type="submit" disabled="">Let’s make my dish</button>
+            <label class="own-dish__label">please fill out the form</label>
+          </form>
+          <div class="own-dish__submit-message own-dish__submit-message_hidden">
+            <p class="own-dish__message">Thanks!</p>
+            <p class="own-dish__message">Your request is accepted.</p>
+            <p class="own-dish__message">We will contact you within 30 minutes.</p>
+            <button class="own-dish__resend-button" type="button" disabled="">Send again</button>
+          </div>
+        </div>
+        <img class="own-dish__image" src="./images/own-dish__img.png">
+      </section>
     </main>
     <footer class="footer"></footer>
   </body>
