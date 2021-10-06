@@ -1,0 +1,8 @@
+.welcome__price {
+  margin: 0;
+  font-family: Mulish;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 55px;
+  z-index: 100;
+}

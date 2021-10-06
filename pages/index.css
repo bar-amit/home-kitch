@@ -1,3 +1,7 @@
+/* vendor */
+@import url(../vendor/fonts.css);
+@import url(../vendor/normalize.css);
+
 /* page */
 @import url(../blocks/page/page.css);
 
@@ -12,6 +16,12 @@
 
 /* welcome */
 @import url(../blocks/welcome/welcome.css);
+@import url(../blocks/welcome/__title/welcome__title.css);
+@import url(../blocks/welcome/__image-title/welcome__image-title.css);
+@import url(../blocks/welcome/__image/welcome__image.css);
+@import url(../blocks/welcome/__toggle-container/welcome__toggle-container.css);
+@import url(../blocks/welcome/__toggle-dot/welcome__toggle-dot.css);
+@import url(../blocks/welcome/__button/welcome__button.css);
 
 /* about */
 @import url(../blocks/about/about.css);
@@ -24,3 +34,7 @@
 
 /* footer */
 @import url(../blocks/footer/footer.css);
+/* welcome */
+@import url(../blocks/welcome/__price/welcome__price.css);
+@import url(../blocks/welcome/__price-tag/welcome__price-tag.css);
+

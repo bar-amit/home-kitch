@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Philosopher";
+  src: url('./fonts/Philosopher-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url('./fonts/Mulish-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url('./fonts/Mulish-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url('./fonts/Nunito-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+}
