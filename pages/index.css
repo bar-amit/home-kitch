@@ -53,6 +53,12 @@
 @import url(../blocks/own-dish/__resend-button/own-dish__resend-button.css);
 @import url(../blocks/own-dish/__image/own-dish__image.css);
 
+/* video */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/video/__subtitle/video__subtitle.css);
+@import url(../blocks/video/__title/video__title.css);
+
 /* chefs */
 @import url(../blocks/chefs/chefs.css);
 @import url(../blocks/chefs/__title/chefs__title.css);
