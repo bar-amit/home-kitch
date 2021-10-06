@@ -1,0 +1,13 @@
+.chefs__paragraph {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.chefs__paragraph:first-of-type {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
