@@ -4,7 +4,7 @@
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
-  padding: 100px 0 105px calc(165px + (100vw - 1440px) / 2);
+  padding: 100px 0 105px 165px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

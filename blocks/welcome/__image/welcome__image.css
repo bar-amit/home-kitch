@@ -5,5 +5,5 @@
   object-fit: cover;
   object-position: center;
   top: 0;
-  left: calc(365px + (100vw - 1440px) / 2);
+  left: 365px;
 }
