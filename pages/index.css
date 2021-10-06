@@ -30,6 +30,11 @@
 
 /* about */
 @import url(../blocks/about/about.css);
+@import url(../blocks/about/__paragraph/about__paragraph.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__page/about__page.css);
+@import url(../blocks/about/__span-accent/about__span-accent.css);
+@import url(../blocks/about/__image/about__image.css);
 
 /* menu */
 @import url(../blocks/menu/menu.css);
@@ -71,4 +76,3 @@
 @import url(../blocks/own-dish/__submit-message/_hidden/own-dish__submit-message_hidden.css);
 @import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_left.css);
 @import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_right.css);
-
