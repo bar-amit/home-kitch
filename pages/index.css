@@ -48,6 +48,17 @@
 @import url(../blocks/own-dish/__resend-button/own-dish__resend-button.css);
 @import url(../blocks/own-dish/__image/own-dish__image.css);
 
+/* chefs */
+@import url(../blocks/chefs/chefs.css);
+@import url(../blocks/chefs/__title/chefs__title.css);
+@import url(../blocks/chefs/__subtitle/chefs__subtitle.css);
+@import url(../blocks/chefs/__carousel/chefs__carousel.css);
+@import url(../blocks/chefs/__card/chefs__card.css);
+@import url(../blocks/chefs/__image/chefs__image.css);
+@import url(../blocks/chefs/__name/chefs__name.css);
+@import url(../blocks/chefs/__paragraph/chefs__paragraph.css);
+@import url(../blocks/chefs/__arrow/chefs__arrow.css);
+
 /* footer */
 @import url(../blocks/footer/footer.css);
 
@@ -58,3 +69,6 @@
 /* modifiers */
 @import url(../blocks/own-dish/__form/_hidden/own-dish__form_hidden.css);
 @import url(../blocks/own-dish/__submit-message/_hidden/own-dish__submit-message_hidden.css);
+@import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_left.css);
+@import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_right.css);
+
