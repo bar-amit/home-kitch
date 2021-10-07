@@ -118,41 +118,47 @@
           </div> 
           <p class="dishes__description">Mamma Mia, this is a real Neapolitan pizza. Grandpa Tony has been making it for 40 years and told us about the main secrets. You really can't stop eating, so order two at once.</p>
         </li>
-        <li class="dishes__item">
-          <img src="./images/dish__image4.png" alt="Mexican Spicy Bowl" class="dishes__image">
-          <div class="dishes__details">
-            <div class="dishes__content">
-              <h3 class="dishes__title">Mexican Spicy Bowl</h3>
-              <p class="dishes__location">Tijuana, Mexico</p>
-            </div>
-            <p class="dishes__price">38$</p>
-          </div> 
-          <p class="dishes__description">Traditional food of Tijuana workers. Simple, but very tasty and healthy. Oh and very spicy</p>
-        </li>
-        <li class="dishes__item">
-          <img src="./images/dish__image5.png" alt="Mr. Jim Buffalo Chicken" class="dishes__image">
-          <div class="dishes__details">
-            <div class="dishes__content">
-              <h3 class="dishes__title">Mr. Jim Buffalo Chicken</h3>
-              <p class="dishes__location">Texas, USA</p>
-            </div>
-            <p class="dishes__price">25$</p>
-          </div> 
-          <p class="dishes__description">This is the chicken that goes best with beer.
-            Mr. Jim in Texas gathers 500 people for his BBQ parties and he knows exactly how to cook an unforgettable chicken.</p>
-        </li>
-        <li class="dishes__item">
-          <img src="./images/dish__image6.png" alt="Moma Ella's apple pie" class="dishes__image">
-          <div class="dishes__details">
-            <div class="dishes__content">
-              <h3 class="dishes__title">Moma Ella's apple pie</h3>
-              <p class="dishes__location">Salzburg, Austria</p>
-            </div>
-            <p class="dishes__price">25$</p>
-          </div> 
-          <p class="dishes__description">This is a warm, sweet, juicy, apple pie from the Austrian countryside. You will not forget this taste, because this recipe is already 50 years old, but no one has yet said that it is tasteless.</p>
-        </li>
 
+        <button class="menu__button" onclick="hideOrShow()">
+          Click Me
+        </button>
+
+        <div id="hidden">
+          <li class="dishes__item">
+            <img src="./images/dish__image4.png" alt="Mexican Spicy Bowl" class="dishes__image">
+            <div class="dishes__details">
+              <div class="dishes__content">
+                <h3 class="dishes__title">Mexican Spicy Bowl</h3>
+                <p class="dishes__location">Tijuana, Mexico</p>
+              </div>
+              <p class="dishes__price">38$</p>
+            </div> 
+            <p class="dishes__description">Traditional food of Tijuana workers. Simple, but very tasty and healthy. Oh and very spicy</p>
+          </li>
+          <li class="dishes__item">
+            <img src="./images/dish__image5.png" alt="Mr. Jim Buffalo Chicken" class="dishes__image">
+            <div class="dishes__details">
+              <div class="dishes__content">
+                <h3 class="dishes__title">Mr. Jim Buffalo Chicken</h3>
+                <p class="dishes__location">Texas, USA</p>
+              </div>
+              <p class="dishes__price">25$</p>
+            </div> 
+            <p class="dishes__description">This is the chicken that goes best with beer.
+              Mr. Jim in Texas gathers 500 people for his BBQ parties and he knows exactly how to cook an unforgettable chicken.</p>
+          </li>
+          <li class="dishes__item">
+            <img src="./images/dish__image6.png" alt="Moma Ella's apple pie" class="dishes__image">
+            <div class="dishes__details">
+              <div class="dishes__content">
+                <h3 class="dishes__title">Moma Ella's apple pie</h3>
+                <p class="dishes__location">Salzburg, Austria</p>
+              </div>
+              <p class="dishes__price">25$</p>
+            </div> 
+            <p class="dishes__description">This is a warm, sweet, juicy, apple pie from the Austrian countryside. You will not forget this taste, because this recipe is already 50 years old, but no one has yet said that it is tasteless.</p>
+          </li>
+        </div>  
       </ul>
 
       </section>
@@ -248,5 +254,29 @@
           <img class="footer__icon" src="./images/logo_instagram.png" alt="Instagram icon"></a></li>
       </ul>
     </footer>
+    <script>
+        function hideOrShow() {
+          
+          // Select the element with id "theDIV"
+          var x = document.querySelector("#hidden");
+          const y = document.querySelector(".menu__button")
+          // If selected element is hidden
+          console.log(y);
+          if (x.style.display === "none") {
+          
+            y.style.display = "none"
+            // Show the hidden element
+            x.style.display = "block";
+            
+            // Else if the selected element is shown
+          } else {
+          
+            // Hide the element
+            x.style.display = "none";
+            y.style.display ="block"
+          }
+        }
+
+    </script>
   </body>
 </html>
