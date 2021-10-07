@@ -1,6 +1,7 @@
 .own-dish__submit-message {
+  max-width: 445px;
   height: 190px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
