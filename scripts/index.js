@@ -1,7 +1,7 @@
 const data = [
   {
     price: '35$',
-    title: ['Salmon pie.', 'From Aunt Betty.' ,'Brescia, Italy.']
+    title: ['Salmon pie', 'From Aunt Betty' ,'Brescia, Italy']
   },
   {
     price: '52$',
