@@ -33,9 +33,28 @@
 
 /* about */
 @import url(../blocks/about/about.css);
+@import url(../blocks/about/__paragraph/about__paragraph.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__page/about__page.css);
+@import url(../blocks/about/__span-accent/about__span-accent.css);
+@import url(../blocks/about/__image/about__image.css);
 
 /* menu */
 @import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__header/menu__header.css);
+@import url(../blocks/menu/__order/menu__order.css);
+@import url(../blocks/menu/__title/menu__title.css);
+@import url(../blocks/menu/__order-item/menu__order-item.css);
+
+/* dishes */
+@import url(../blocks/dishes/dishes.css);
+@import url(../blocks/dishes/__image/dishes__image.css);
+@import url(../blocks/dishes/__description/dishes__description.css);
+@import url(../blocks/dishes/__details/dish__details.css);
+@import url(../blocks/dishes/__item/dishes__item.css);
+@import url(../blocks/dishes/__location/dishes__location.css);
+@import url(../blocks/dishes/__price/dishes__price.css);
+@import url(../blocks/dishes/__title/dishes__title.css);
 
 /* own-dish */
 @import url(../blocks/own-dish/own-dish.css);
@@ -51,6 +70,12 @@
 @import url(../blocks/own-dish/__resend-button/own-dish__resend-button.css);
 @import url(../blocks/own-dish/__image/own-dish__image.css);
 
+/* video */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/video/__subtitle/video__subtitle.css);
+@import url(../blocks/video/__title/video__title.css);
+
 /* chefs */
 @import url(../blocks/chefs/chefs.css);
 @import url(../blocks/chefs/__title/chefs__title.css);
@@ -64,6 +89,10 @@
 
 /* footer */
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__icon/footer__icon.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
 
 /* modifiers */
 @import url(../blocks/own-dish/__form/_hidden/own-dish__form_hidden.css);

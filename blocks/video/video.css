@@ -1,0 +1,6 @@
+.video {
+  min-height: 619px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

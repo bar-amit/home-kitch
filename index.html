@@ -13,7 +13,7 @@
         <a class="header__link" href="#menu">Menu</a>
         <a class="header__link" href="#own-dish">Own Dish</a>
       </nav>
-      <div class="header__logo"></div>
+      <img src="./images/logo.png" alt="Home Kitchen logo" class="header__logo">
       <div class="header__info">
         <p class="header__info-number">8-700-20-10</p>
         <p class="header__info-hours">Every day from 8 to 22</p>
@@ -61,11 +61,103 @@
         </div>
       </section>
       <section class="about" id="about">
+        <div class="about__page">
+          <h2 class="about__title">About the restaurant</h2>
+          <p class="about__paragraph">During the pandemic, many people remained trapped in foreign countries. Some have just been working abroad for a long time and are very homesick.</p>
+          <p class="about__paragraph">Perhaps you haven't eaten your mom's signature soup or your grandma's meat pie for many years, and you can't get the French meat from your aunt Zoey out of your head. </p>
+          <p class="about__paragraph"><span class="about__span-accent">
+            We are ready to help you prepare that very dish.</span></p>
+          <img src="./images/about_left.png" alt="Chefs cooking" class="about__image">
+        </div>
+        <div class="about__page">
+          <img src="./images/about_right.png" alt="Happy family in the Kitchen" class="about__image">
+          <p class="about__paragraph">Our menu features the best homemade dishes of our customers from all over the world. Each dish has its own story and its own fans. Only dishes with a high rating are included in our menu.</p>
+          <p class="about__paragraph">To feel the taste of home, you can also create the same recipe with our chefs, they will take into account all the wishes and ingredients, contact your grandmother to clarify the subtleties of the recipe and together we will create the same dish from the past.</p>
+          <p class="about__paragraph">You and your friends will be able to order it via a special link, and if it becomes popular, we will be able to include it in the main menu and you will receive royalties from sales.</p>
+        </div>
 
       </section>
       <section class="menu" id="menu">
+        <div class="menu__header">
+          <h2 class="menu__title">Menu</h2>
+          <div class="menu__order">
+            <p class="menu__order-item">call us to order</p>
+            <p class="menu__order-item">8-700-20-10</p>
+          </div>
+        </div>
+      <ul class="dishes">
+        <li class="dishes__item">
+          <img src="./images/dish__image1.png" alt="Aunt Betty Salmon pie" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Aunt Betty Salmon pie</h3>
+              <p class="dishes__location">Brescia, Italy.</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div>  
+          <p class="dishes__description">When our friend Silvio was little, there wasn't a lot of interesting food in his village, but there was a lot of salmon. His grandmother cooked him his favorite salmon pie with cardamom, rosemary and other secret ingredients. We were able to repeat this dish and now it is available to everyone.</p>
+        </li>
+        <li class="dishes__item">
+          <img src="./images/dish__image2.png" alt="Tetya Natasha Borsch" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Tetya Natasha Borsch</h3>
+              <p class="dishes__location">Siberia, Russia</p>
+            </div>
+            <p class="dishes__price">52$</p>
+          </div> 
+          <p class="dishes__description">When Ivan gets tired of the big city and office work, he orders his favorite warming borscht from Siberia. his aunt Natasha cooked in a special way with the addition of vodka and cranberries. Try it.</p>
+        </li>
+        <li class="dishes__item">
+          <img src="./images/dish__image3.png" alt="Grandpa Tony’s pizza" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Grandpa Tony’s pizza</h3>
+              <p class="dishes__location">Naples, Italy.</p>
+            </div>
+            <p class="dishes__price">40$</p>
+          </div> 
+          <p class="dishes__description">Mamma Mia, this is a real Neapolitan pizza. Grandpa Tony has been making it for 40 years and told us about the main secrets. You really can't stop eating, so order two at once.</p>
+        </li>
+        <li class="dishes__item">
+          <img src="./images/dish__image4.png" alt="Mexican Spicy Bowl" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Mexican Spicy Bowl</h3>
+              <p class="dishes__location">Tijuana, Mexico</p>
+            </div>
+            <p class="dishes__price">38$</p>
+          </div> 
+          <p class="dishes__description">Traditional food of Tijuana workers. Simple, but very tasty and healthy. Oh and very spicy</p>
+        </li>
+        <li class="dishes__item">
+          <img src="./images/dish__image5.png" alt="Mr. Jim Buffalo Chicken" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Mr. Jim Buffalo Chicken</h3>
+              <p class="dishes__location">Texas, USA</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div> 
+          <p class="dishes__description">This is the chicken that goes best with beer.
+            Mr. Jim in Texas gathers 500 people for his BBQ parties and he knows exactly how to cook an unforgettable chicken.</p>
+        </li>
+        <li class="dishes__item">
+          <img src="./images/dish__image6.png" alt="Moma Ella's apple pie" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Moma Ella's apple pie</h3>
+              <p class="dishes__location">Salzburg, Austria</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div> 
+          <p class="dishes__description">This is a warm, sweet, juicy, apple pie from the Austrian countryside. You will not forget this taste, because this recipe is already 50 years old, but no one has yet said that it is tasteless.</p>
+        </li>
+
+      </ul>
 
       </section>
+
       <section class="own-dish" id="own-dish">
         <div class="own-dish__column">
           <h2 class="own-dish__title">Make your own childhood dish.</h2>
@@ -88,6 +180,13 @@
         </div>
         <img class="own-dish__image" src="./images/own-dish__img.png">
       </section>
+
+      <section class="video">
+        <h2 class="video__title">How it works.</h2>
+        <p class="video__subtitle">Watch our little promo video</p>
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/rFYpmJWJxGE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
       <section class="chefs">
         <h2 class="chefs__title">Our Chefs</h2>
         <p class="chefs__subtitle">We really have a dream team</p>
@@ -139,8 +238,17 @@
         </ul>
       </section>
     </main>
-    <footer class="footer"></footer>
 
-    <script type="text/javascript" src="./scripts/index.js"></script>
+    <footer class="footer">
+      <img src="./images/logo_white.png" alt="Home Kitchen logo" class="footer__logo">
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#">
+          <img class="footer__icon" src="./images/logo_facebook.png" alt="Facebook icon"></a></li>
+        <li><a class="footer__link" href="#">
+          <img class="footer__icon" src="./images/logo_youtube.png" alt="Youtube icon"></a></li>
+        <li><a class="footer__link" href="#">
+          <img class="footer__icon" src="./images/logo_instagram.png" alt="Instagram icon"></a></li>
+      </ul>
+    </footer>
   </body>
 </html>
