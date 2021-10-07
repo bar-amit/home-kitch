@@ -21,41 +21,42 @@
     </header>
     <main class="main">
       <section class="welcome">
-        <h1 class="welcome__title"> Try your favorite childhood dishes</h1>
-        <p class="welcome__image-title">Salmon pie. From Aunt Betty. Brescia, Italy.</p>
+        <h1 class="welcome__title">Try your favorite childhood dishes</h1>
+        <p class="welcome__image-title">Salmon pie.</p>
+        <p class="welcome__image-title">From Aunt Betty.</p>
+        <p class="welcome__image-title">Brescia, Italy.</p>
         <p class="welcome__price">From <span class="welcome__price-tag">35&#36;</span></p>
-        <img class="welcome__image" src="./images/welcome__img_1.png">
-        <button class="welcome__button" type="button">learn more</button>
+        <img class="welcome__image welcome__image_animate-in" src="./images/welcome__img_1.png">
+        <img class="welcome__image" src="./images/welcome__img_2.png" alt="A boll of borsch soup">
+        <img class="welcome__image" src="./images/welcome__img_3.png" alt="Home style pizza">
+        <a class="welcome__button" href="#menu">learn more</a>
         <div class="welcome__toggle-container">
           <svg
-            class="welcome__toggle-dot"
             width="14"
             height="14"
             viewBox="0 0 14 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="7" cy="7" r="7" fill="#F0935F" />
+            <circle class="welcome__toggle-dot welcome__toggle-dot_active" data-key="0" cx="7" cy="7" r="7" fill="#F0935F" />
           </svg>
           <svg
-            class="welcome__toggle-dot"
             width="14"
             height="14"
             viewBox="0 0 14 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF" />
+            <circle class="welcome__toggle-dot" data-key="1" cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
           <svg
-            class="welcome__toggle-dot"
             width="14"
             height="14"
             viewBox="0 0 14 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF" />
+            <circle class="welcome__toggle-dot" data-key="2" cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
         </div>
       </section>
@@ -237,6 +238,7 @@
         </ul>
       </section>
     </main>
+
     <footer class="footer">
       <img src="./images/logo_white.png" alt="Home Kitchen logo" class="footer__logo">
       <ul class="footer__list">
