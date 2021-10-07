@@ -4,3 +4,7 @@
   margin: 18px auto 0;
   padding: 0;
 }
+
+.menu__button:hover {
+  cursor: pointer;
+}
