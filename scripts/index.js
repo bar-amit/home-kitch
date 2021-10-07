@@ -7,14 +7,14 @@ const formSelectors = {
   submitButtonSelector: ".own-dish__button",
   inactiveButtonClass: "own-dish__button_disabled",
   inputErrorClass: "ownd-dish__input_error",
-  errorClass: "own-dish__input-error_visible"
-}
+  errorClass: "own-dish__input-error_visible",
+};
 
-const hiddenFormClass = 'own-dish__form_hidden';
-const hiddenMessageClass = 'own-dish__submit-message_hidden';
+const hiddenFormClass = "own-dish__form_hidden";
+const hiddenMessageClass = "own-dish__submit-message_hidden";
 
-const messageElement = document.querySelector('.own-dish__submit-message');
-const formElement = document.querySelector('.own-dish__form');
+const messageElement = document.querySelector(".own-dish__submit-message");
+const formElement = document.querySelector(".own-dish__form");
 const resendButton = document.querySelector('.own-dish__button[type="button"]');
 
 // this will reload the form after submission
@@ -22,12 +22,14 @@ resendButton.addEventListener('click', toggleForm);
 
 // form submition will prompt a succes message
 formElement.addEventListener('submit', function(e) {
+
   e.preventDefault();
 
   formValidation.resetValidation();
   e.target.reset();
   toggleForm();
 });
+
 
 // toggles between the form and the sumbit message
 function toggleForm() {
@@ -46,8 +48,8 @@ formValidation.enableValidation();
 
 const imageData = [
   {
-    price: '35$',
-    title: ['Salmon pie', 'From Aunt Betty' ,'Brescia, Italy']
+    price: "35$",
+    title: ["Salmon pie", "From Aunt Betty", "Brescia, Italy"],
   },
   {
     price: '52$',
@@ -76,8 +78,7 @@ const duration = 7000;
 let intervalId = undefined;
 
 function switchTitle(title) {
-  for(let i=0; i<3; i++)
-    titleElements[i].textContent = title[i];
+  for (let i = 0; i < 3; i++) titleElements[i].textContent = title[i];
 }
 
 function setImage() {
@@ -92,7 +93,7 @@ function unsetImage() {
   toggleElements[index].classList.remove(activeToggleClass);
 }
 
-function startRotate(initialIndex){
+function startRotate(initialIndex) {
   unsetImage();
   index = parseInt(initialIndex);
   setImage();
@@ -101,30 +102,29 @@ function startRotate(initialIndex){
 
 function iterate() {
   unsetImage();
-  index===2 ? index=0 : index++;
+  index === 2 ? (index = 0) : index++;
   setImage();
 }
 
 // restart the rotation from selected image
 toggleElements.forEach(toggle => {
-  toggle.addEventListener('click', function(e) {
+  toggle.addEventListener("click", function (e) {
     clearInterval(intervalId);
-    startRotate(e.target.getAttribute('data-key'));
+    startRotate(e.target.getAttribute("data-key"));
   });
 });
 
 // initialize rotation
 startRotate(0);
 
-
 /*
   Chefs Gallery:
 */
 
-const cards = document.querySelectorAll('.chefs__card');
+const cards = document.querySelectorAll(".chefs__card");
 
-const rightButton = document.querySelector('.chefs__arrow_direction_right');
-const leftButton = document.querySelector('.chefs__arrow_direction_left');
+const rightButton = document.querySelector(".chefs__arrow_direction_right");
+const leftButton = document.querySelector(".chefs__arrow_direction_left");
 
 const cardWidth = 285;
 
