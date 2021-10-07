@@ -1,0 +1,10 @@
+1. create images.js with images' data.
+
+2. create the css class to animate the fade-in-out.
+
+3. create functions for:
+  - changing the price and title
+  - automatically rotate between the images.
+  - remove the current image and load the other.
+
+4. refactor the code to make it clearer.
