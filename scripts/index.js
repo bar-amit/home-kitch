@@ -2,6 +2,14 @@
   Form:
 */
 
+const formSelectors = {
+  inputSelector: ".own-dish__input",
+  submitButtonSelector: ".own-dish__button",
+  inactiveButtonClass: "own-dish__button_disabled",
+  inputErrorClass: "ownd-dish__input_error",
+  errorClass: "own-dish__input-error_visible"
+}
+
 const hiddenFormClass = 'own-dish__form_hidden';
 const hiddenMessageClass = 'own-dish__submit-message_hidden';
 
@@ -11,9 +19,11 @@ const resendButton = document.querySelector('.own-dish__button[type="button"]');
 
 resendButton.addEventListener('click', toggleForm);
 
-formElement.addEventListener('submimt', function(e) {
+formElement.addEventListener('submit', function(e) {
   e.preventDefault();
 
+  formValidation.resetValidation();
+  e.target.reset();
   toggleForm();
 });
 
@@ -21,6 +31,10 @@ function toggleForm() {
   formElement.classList.toggle(hiddenFormClass);
   messageElement.classList.toggle(hiddenMessageClass);
 }
+
+const formValidation = new Validation(formSelectors, formElement);
+formElement.reset();
+formValidation.enableValidation();
 
 /*
   Welcome Gallery:

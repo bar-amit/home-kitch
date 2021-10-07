@@ -165,9 +165,11 @@
           <p class="own-dish__paragraph">We employ professional chefs, experts in all world cuisines. Leave your contacts, our experts will contact you and will be able to restore and create for you your favorite dish from childhood. If necessary, we can even contact your grandmother in the village to find out the subtleties of the recipe.</p>
           <p class="own-dish__paragraph">After we restore your signature dish, you can order it using a unique link and share it with friends.</p>
           <p class="own-dish__paragraph">If your dish is ordered more than 10 times, we will be able to consider it for inclusion in our main menu. Then you will be able to receive royalties from the sale of the dish.</p>
-          <form class="own-dish__form">
-            <input class="own-dish__input" name="user-name" placeholder="Name..."></input>
-            <input class="own-dish__input" name="phone" placeholder="Phone..."></input>
+          <form class="own-dish__form" novalidate>
+            <span class="own-dish__input-error" id="input_name-error"></span>
+            <input class="own-dish__input" id="input_name" name="user-name" placeholder="Name..." minlength="2" maxlength="40" type="text" required></input>
+            <span class="own-dish__input-error" id="input-phone-error"></span>
+            <input class="own-dish__input" id="input-phone" name="phone" placeholder="Phone..." minlength="9" maxlength="12" type="tel" pattern="^[0-9]*$" required></input>
             <button class="own-dish__button" type="submit" disabled="">Let’s make my dish</button>
             <label class="own-dish__label">please fill out the form</label>
           </form>
@@ -253,6 +255,7 @@
       </ul>
     </footer>
 
+    <script type="text/javascript" src="./scripts/validation.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
   </body>
 </html>

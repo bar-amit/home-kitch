@@ -68,6 +68,7 @@
 @import url(../blocks/own-dish/__submit-message/own-dish__submit-message.css);
 @import url(../blocks/own-dish/__message/own-dish__message.css);
 @import url(../blocks/own-dish/__image/own-dish__image.css);
+@import url(../blocks/own-dish/__input-error/own-dish__input-error.css);
 
 /* video */
 @import url(../blocks/video/video.css);
@@ -101,3 +102,6 @@
 @import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_right.css);
 @import url(../blocks/welcome/__image/_animate-in/welcome__image_animate-in.css);
 @import url(../blocks/welcome/__toggle-dot/_active/welcome__toggle-dot_active.css);
+@import url(../blocks/own-dish/__input-error/_visible/own-dish__input-error_visible.css);
+@import url(../blocks/own-dish/__input/_error/ownd-dish__input_error.css);
+
