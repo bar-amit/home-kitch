@@ -2,6 +2,9 @@
   Menu:
 */
 
+const showButton = document.querySelector(".menu__button");
+const hiddenItems = document.querySelectorAll(".dish__item_hidden");
+
 showButton.addEventListener("click", hideOrShow);
 
 function hideOrShow(e) {
