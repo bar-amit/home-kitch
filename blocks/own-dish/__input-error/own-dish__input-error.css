@@ -1,15 +1,13 @@
 .own-dish__input-error {
-  width: 200px;
-  height: 50px;
+  width: 180px;
   visibility: hidden;
   color: #FD2121;
   position: absolute;
+  top: calc((45px - 28px) / 2);
   left: calc(100% + 10px);
   font-family: Mulish;
-  font-size: 14px;
-  line-height: 50px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  font-size: 10px;
+  line-height: 1.4;
   overflow: hidden;
 }
 
