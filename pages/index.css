@@ -38,6 +38,20 @@
 
 /* menu */
 @import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__header/menu__header.css);
+@import url(../blocks/menu/__order/menu__order.css);
+@import url(../blocks/menu/__title/menu__title.css);
+@import url(../blocks/menu/__order-item/menu__order-item.css);
+
+/* dishes */
+@import url(../blocks/dishes/dishes.css);
+@import url(../blocks/dishes/__image/dishes__image.css);
+@import url(../blocks/dishes/__description/dishes__description.css);
+@import url(../blocks/dishes/__details/dish__details.css);
+@import url(../blocks/dishes/__item/dishes__item.css);
+@import url(../blocks/dishes/__location/dishes__location.css);
+@import url(../blocks/dishes/__price/dishes__price.css);
+@import url(../blocks/dishes/__title/dishes__title.css);
 
 /* own-dish */
 @import url(../blocks/own-dish/own-dish.css);
