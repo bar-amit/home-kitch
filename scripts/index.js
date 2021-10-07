@@ -149,8 +149,8 @@ function setArrows() {
     removeArrowEvent(rightButton, handleRightArrow);
     setArrowEvent(leftButton, handleLeftArrow);
     setArrowEvent(rightButton, handleRightArrow);
-    rightButton.style.visability = "visible";
-    leftButton.style.visibility = "visible";
+    rightButton.style.visibility = 'visible';
+    leftButton.style.visibility = 'visible';
   }
 }
 
