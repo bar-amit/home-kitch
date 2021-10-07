@@ -1,0 +1,14 @@
+.menu__order-item {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.menu__order-item:nth-child(2) {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+}

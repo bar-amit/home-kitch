@@ -1,0 +1,7 @@
+.dishes__details {
+  position: relative;
+  top: 224px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 0 23px;
+}
