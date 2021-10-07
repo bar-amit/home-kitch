@@ -58,23 +58,22 @@ const imageData = [
   }
 ];
 
-const imageClass = 'welcome__image';
 const imageAnimateInClass = 'welcome__image_animate-in';
-
-const toggleClass = 'welcome__toggle-dot';
 const activeToggleClass = 'welcome__toggle-dot_active';
 
-const priceTagSelector = '.welcome__price-tag'
+const priceElement = document.querySelector('.welcome__price-tag');
+const imageElements = document.querySelectorAll('.welcome__image');
+const titleElements = document.querySelectorAll('.welcome__image-title');
+const toggleElements = document.querySelectorAll('.welcome__toggle-dot');
 
-const imageTitleSelector = '.welcome__image-title'
-
-const priceElement = document.querySelector(priceTagSelector);
-const imageElements = document.querySelectorAll(`.${imageClass}`);
-const titleElements = document.querySelectorAll(imageTitleSelector);
-const toggleElements = document.querySelectorAll(`.${toggleClass}`);
-
+// index of image showing
 let index = 0;
-let intervalId = 0;
+
+// time interval (ms)
+const duration = 7000;
+
+// to be able to remove setInterval
+let intervalId = undefined;
 
 function switchTitle(title) {
   for(let i=0; i<3; i++)
@@ -97,7 +96,7 @@ function startRotate(initialIndex){
   unsetImage();
   index = parseInt(initialIndex);
   setImage();
-  intervalId = setInterval(iterate, 7000);
+  intervalId = setInterval(iterate, duration);
 }
 
 function iterate() {
@@ -106,6 +105,7 @@ function iterate() {
   setImage();
 }
 
+// restart the rotation from selected image
 toggleElements.forEach(toggle => {
   toggle.addEventListener('click', function(e) {
     clearInterval(intervalId);
@@ -113,6 +113,7 @@ toggleElements.forEach(toggle => {
   });
 });
 
+// initialize rotation
 startRotate(0);
 
 
