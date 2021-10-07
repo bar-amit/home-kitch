@@ -1,4 +1,17 @@
 /*
+  Menu:
+*/
+
+showButton.addEventListener("click", hideOrShow);
+
+function hideOrShow(e) {
+  hiddenItems.forEach(item => {
+    item.classList.remove("dish__item_hidden");
+  });
+  showButton.remove();
+}
+
+/*
   Form:
 */
 
