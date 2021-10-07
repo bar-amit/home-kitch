@@ -1,6 +1,6 @@
 .chefs__arrow {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 40px);
 }
 
 .chefs__arrow:hover {
