@@ -17,8 +17,10 @@ const messageElement = document.querySelector('.own-dish__submit-message');
 const formElement = document.querySelector('.own-dish__form');
 const resendButton = document.querySelector('.own-dish__button[type="button"]');
 
+// this will reload the form after submission
 resendButton.addEventListener('click', toggleForm);
 
+// form submition will prompt a succes message
 formElement.addEventListener('submit', function(e) {
   e.preventDefault();
 
@@ -27,11 +29,13 @@ formElement.addEventListener('submit', function(e) {
   toggleForm();
 });
 
+// toggles between the form and the sumbit message
 function toggleForm() {
   formElement.classList.toggle(hiddenFormClass);
   messageElement.classList.toggle(hiddenMessageClass);
 }
 
+// setting form validation
 const formValidation = new Validation(formSelectors, formElement);
 formElement.reset();
 formValidation.enableValidation();
@@ -40,7 +44,7 @@ formValidation.enableValidation();
   Welcome Gallery:
 */
 
-const data = [
+const imageData = [
   {
     price: '35$',
     title: ['Salmon pie', 'From Aunt Betty' ,'Brescia, Italy']
@@ -52,7 +56,8 @@ const data = [
     price: '40$',
     title: ['Homemade pizza', 'From Grandpa Tony', 'Naples, Italy']
   }
-]
+];
+
 const imageClass = 'welcome__image';
 const imageAnimateInClass = 'welcome__image_animate-in';
 
@@ -79,8 +84,8 @@ function switchTitle(title) {
 function setImage() {
   imageElements[index].classList.add(imageAnimateInClass);
   toggleElements[index].classList.add(activeToggleClass);
-  priceElement.textContent = data[index].price;
-  switchTitle(data[index].title);
+  priceElement.textContent = imageData[index].price;
+  switchTitle(imageData[index].title);
 }
 
 function unsetImage() {
@@ -120,62 +125,18 @@ const cards = document.querySelectorAll('.chefs__card');
 const rightButton = document.querySelector('.chefs__arrow_direction_right');
 const leftButton = document.querySelector('.chefs__arrow_direction_left');
 
-const offset = 285;
+const cardWidth = 285;
 
-let position = 0;
+const slider = new Slider(
+  cards,
+  {
+    leftControler: leftButton,
+    rightControler: rightButton
+  },
+  {
+    elementWidth: cardWidth,
+    initialPosition: 0,
+    amountOfItems: 4
+  });
 
-function setArrows() {
-  if(position===0){
-    removeArrowEvent(leftButton, handleLeftArrow);
-    rightButton.style.visibility = 'visible';
-    leftButton.style.visibility = 'hidden';
-  }
-  else if(position===2){
-    removeArrowEvent(rightButton, handleRightArrow);
-    rightButton.style.visibility = 'hidden';
-    leftButton.style.visibility = 'visible';
-  }
-  else {
-    removeArrowEvent(leftButton, handleLeftArrow);
-    removeArrowEvent(rightButton, handleRightArrow);
-    setArrowEvent(leftButton, handleLeftArrow);
-    setArrowEvent(rightButton, handleRightArrow);
-    rightButton.style.visibility = 'visible';
-    leftButton.style.visibility = 'visible';
-  }
-}
-
-function move(direction) {
-  if(direction==='right'){
-    position = position>1 ? 2 : position+1 ;
-  }
-  else if(direction==='left'){
-    position = position<1 ? 0 : position-1 ;
-  }
-  setPosition();
-  setArrows();
-}
-
-function setPosition() {
-  cards.forEach(card => card.style.left = `-${position * offset}px`)
-}
-
-function handleRightArrow(){
-  move('right');
-}
-
-function handleLeftArrow(){
-  move('left');
-}
-
-function setArrowEvent(arrow, handle) {
-  arrow.addEventListener('click', handle);
-}
-
-function removeArrowEvent(arrow, handle) {
-  arrow.addEventListener('click', handle)
-}
-
-setPosition();
-setArrows();
-setArrowEvent(rightButton, handleRightArrow);
+slider.initialize();
