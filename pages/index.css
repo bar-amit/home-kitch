@@ -102,6 +102,9 @@
 @import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_right.css);
 @import url(../blocks/welcome/__image/_animate-in/welcome__image_animate-in.css);
 @import url(../blocks/welcome/__toggle-dot/_active/welcome__toggle-dot_active.css);
+@import url(../blocks/welcome/__image/_name/_borsch/welcome__image_name_borsch.css);
+@import url(../blocks/welcome/__image/_name/_pizza/welcome__image_name_pizza.css);
+@import url(../blocks/welcome/__image/_name/_salmon/welcome__image_name_salmon.css);
 @import url(../blocks/own-dish/__input-error/_visible/own-dish__input-error_visible.css);
 @import url(../blocks/own-dish/__input/_error/ownd-dish__input_error.css);
 
