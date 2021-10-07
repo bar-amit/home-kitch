@@ -67,3 +67,73 @@ toggleElements.forEach(toggle => {
 });
 
 startRotate(0);
+
+
+/*
+  Chefs Gallery:
+*/
+
+const cards = document.querySelectorAll('.chefs__card');
+
+const rightButton = document.querySelector('.chefs__arrow_direction_right');
+const leftButton = document.querySelector('.chefs__arrow_direction_left');
+
+const offset = 285;
+
+let position = 0;
+
+function setArrows() {
+  if(position===0){
+    removeArrowEvent(leftButton, handleLeftArrow);
+    rightButton.style.visibility = 'visible';
+    leftButton.style.visibility = 'hidden';
+  }
+  else if(position===2){
+    removeArrowEvent(rightButton, handleRightArrow);
+    rightButton.style.visibility = 'hidden';
+    leftButton.style.visibility = 'visible';
+  }
+  else {
+    removeArrowEvent(leftButton, handleLeftArrow);
+    removeArrowEvent(rightButton, handleRightArrow);
+    setArrowEvent(leftButton, handleLeftArrow);
+    setArrowEvent(rightButton, handleRightArrow);
+    rightButton.style.visability = 'visible';
+    leftButton.style.visibility = 'visible';
+  }
+}
+
+function move(direction) {
+  if(direction==='right'){
+    position = position>1 ? 2 : position+1 ;
+  }
+  else if(direction==='left'){
+    position = position<1 ? 0 : position-1 ;
+  }
+  setPosition();
+  setArrows();
+}
+
+function setPosition() {
+  cards.forEach(card => card.style.left = `-${position * offset}px`)
+}
+
+function handleRightArrow(){
+  move('right');
+}
+
+function handleLeftArrow(){
+  move('left');
+}
+
+function setArrowEvent(arrow, handle) {
+  arrow.addEventListener('click', handle);
+}
+
+function removeArrowEvent(arrow, handle) {
+  arrow.addEventListener('click', handle)
+}
+
+setPosition();
+setArrows();
+setArrowEvent(rightButton, handleRightArrow);

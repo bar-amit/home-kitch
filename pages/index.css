@@ -86,6 +86,7 @@
 @import url(../blocks/chefs/__name/chefs__name.css);
 @import url(../blocks/chefs/__paragraph/chefs__paragraph.css);
 @import url(../blocks/chefs/__arrow/chefs__arrow.css);
+@import url(../blocks/chefs/__carousel-viewport/chefs__carousel-viewport.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);
