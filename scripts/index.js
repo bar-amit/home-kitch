@@ -1,3 +1,31 @@
+/*
+  Form:
+*/
+
+const hiddenFormClass = 'own-dish__form_hidden';
+const hiddenMessageClass = 'own-dish__submit-message_hidden';
+
+const messageElement = document.querySelector('.own-dish__submit-message');
+const formElement = document.querySelector('.own-dish__form');
+const resendButton = document.querySelector('.own-dish__button[type="button"]');
+
+resendButton.addEventListener('click', toggleForm);
+
+formElement.addEventListener('submimt', function(e) {
+  e.preventDefault();
+
+  toggleForm();
+});
+
+function toggleForm() {
+  formElement.classList.toggle(hiddenFormClass);
+  messageElement.classList.toggle(hiddenMessageClass);
+}
+
+/*
+  Welcome Gallery:
+*/
+
 const data = [
   {
     price: '35$',
