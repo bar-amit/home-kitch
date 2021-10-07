@@ -1,4 +1,17 @@
 /*
+  Menu:
+*/
+
+showButton.addEventListener("click", hideOrShow);
+
+function hideOrShow(e) {
+  hiddenItems.forEach(item => {
+    item.classList.remove("dish__item_hidden");
+  });
+  showButton.remove();
+}
+
+/*
   Form:
 */
 
@@ -17,12 +30,12 @@ const messageElement = document.querySelector(".own-dish__submit-message");
 const formElement = document.querySelector(".own-dish__form");
 const resendButton = document.querySelector('.own-dish__button[type="button"]');
 
-const showButton = document.querySelector(".menu__button");
-const hiddenItems = document.querySelectorAll(".dish__item_hidden");
+// this will reload the form after submission
+resendButton.addEventListener('click', toggleForm);
 
-resendButton.addEventListener("click", toggleForm);
+// form submition will prompt a succes message
+formElement.addEventListener('submit', function(e) {
 
-formElement.addEventListener("submit", function (e) {
   e.preventDefault();
 
   formValidation.resetValidation();
@@ -30,20 +43,14 @@ formElement.addEventListener("submit", function (e) {
   toggleForm();
 });
 
-showButton.addEventListener("click", hideOrShow);
 
-function hideOrShow(e) {
-  hiddenItems.forEach(item => {
-    item.classList.remove("dish__item_hidden");
-  });
-  showButton.remove();
-}
-
+// toggles between the form and the sumbit message
 function toggleForm() {
   formElement.classList.toggle(hiddenFormClass);
   messageElement.classList.toggle(hiddenMessageClass);
 }
 
+// setting form validation
 const formValidation = new Validation(formSelectors, formElement);
 formElement.reset();
 formValidation.enableValidation();
@@ -52,37 +59,36 @@ formValidation.enableValidation();
   Welcome Gallery:
 */
 
-const data = [
+const imageData = [
   {
     price: "35$",
     title: ["Salmon pie", "From Aunt Betty", "Brescia, Italy"],
   },
   {
-    price: "52$",
-    title: ["Borsch", "From tetya Natasha", "Siberia, Russia"],
-  },
-  {
-    price: "40$",
-    title: ["Homemade pizza", "From Grandpa Tony", "Naples, Italy"],
-  },
+    price: '52$',
+    title: ['Borsch', 'From tetya Natasha', 'Siberia, Russia']
+  },{
+    price: '40$',
+    title: ['Homemade pizza', 'From Grandpa Tony', 'Naples, Italy']
+  }
 ];
-const imageClass = "welcome__image";
-const imageAnimateInClass = "welcome__image_animate-in";
 
-const toggleClass = "welcome__toggle-dot";
-const activeToggleClass = "welcome__toggle-dot_active";
+const imageAnimateInClass = 'welcome__image_animate-in';
+const activeToggleClass = 'welcome__toggle-dot_active';
 
-const priceTagSelector = ".welcome__price-tag";
+const priceElement = document.querySelector('.welcome__price-tag');
+const imageElements = document.querySelectorAll('.welcome__image');
+const titleElements = document.querySelectorAll('.welcome__image-title');
+const toggleElements = document.querySelectorAll('.welcome__toggle-dot');
 
-const imageTitleSelector = ".welcome__image-title";
-
-const priceElement = document.querySelector(priceTagSelector);
-const imageElements = document.querySelectorAll(`.${imageClass}`);
-const titleElements = document.querySelectorAll(imageTitleSelector);
-const toggleElements = document.querySelectorAll(`.${toggleClass}`);
-
+// index of image showing
 let index = 0;
-let intervalId = 0;
+
+// time interval (ms)
+const duration = 7000;
+
+// to be able to remove setInterval
+let intervalId = undefined;
 
 function switchTitle(title) {
   for (let i = 0; i < 3; i++) titleElements[i].textContent = title[i];
@@ -91,8 +97,8 @@ function switchTitle(title) {
 function setImage() {
   imageElements[index].classList.add(imageAnimateInClass);
   toggleElements[index].classList.add(activeToggleClass);
-  priceElement.textContent = data[index].price;
-  switchTitle(data[index].title);
+  priceElement.textContent = imageData[index].price;
+  switchTitle(imageData[index].title);
 }
 
 function unsetImage() {
@@ -104,7 +110,7 @@ function startRotate(initialIndex) {
   unsetImage();
   index = parseInt(initialIndex);
   setImage();
-  intervalId = setInterval(iterate, 7000);
+  intervalId = setInterval(iterate, duration);
 }
 
 function iterate() {
@@ -113,6 +119,7 @@ function iterate() {
   setImage();
 }
 
+// restart the rotation from selected image
 toggleElements.forEach(toggle => {
   toggle.addEventListener("click", function (e) {
     clearInterval(intervalId);
@@ -120,6 +127,7 @@ toggleElements.forEach(toggle => {
   });
 });
 
+// initialize rotation
 startRotate(0);
 
 /*
@@ -131,59 +139,18 @@ const cards = document.querySelectorAll(".chefs__card");
 const rightButton = document.querySelector(".chefs__arrow_direction_right");
 const leftButton = document.querySelector(".chefs__arrow_direction_left");
 
-const offset = 285;
+const cardWidth = 285;
 
-let position = 0;
+const slider = new Slider(
+  cards,
+  {
+    leftControler: leftButton,
+    rightControler: rightButton
+  },
+  {
+    elementWidth: cardWidth,
+    initialPosition: 0,
+    amountOfItems: 4
+  });
 
-function setArrows() {
-  if (position === 0) {
-    removeArrowEvent(leftButton, handleLeftArrow);
-    rightButton.style.visibility = "visible";
-    leftButton.style.visibility = "hidden";
-  } else if (position === 2) {
-    removeArrowEvent(rightButton, handleRightArrow);
-    rightButton.style.visibility = "hidden";
-    leftButton.style.visibility = "visible";
-  } else {
-    removeArrowEvent(leftButton, handleLeftArrow);
-    removeArrowEvent(rightButton, handleRightArrow);
-    setArrowEvent(leftButton, handleLeftArrow);
-    setArrowEvent(rightButton, handleRightArrow);
-    rightButton.style.visibility = 'visible';
-    leftButton.style.visibility = 'visible';
-  }
-}
-
-function move(direction) {
-  if (direction === "right") {
-    position = position > 1 ? 2 : position + 1;
-  } else if (direction === "left") {
-    position = position < 1 ? 0 : position - 1;
-  }
-  setPosition();
-  setArrows();
-}
-
-function setPosition() {
-  cards.forEach(card => (card.style.left = `-${position * offset}px`));
-}
-
-function handleRightArrow() {
-  move("right");
-}
-
-function handleLeftArrow() {
-  move("left");
-}
-
-function setArrowEvent(arrow, handle) {
-  arrow.addEventListener("click", handle);
-}
-
-function removeArrowEvent(arrow, handle) {
-  arrow.addEventListener("click", handle);
-}
-
-setPosition();
-setArrows();
-setArrowEvent(rightButton, handleRightArrow);
+slider.initialize();
