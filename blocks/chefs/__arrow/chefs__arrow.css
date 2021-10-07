@@ -2,3 +2,7 @@
   position: absolute;
   top: 50%;
 }
+
+.chefs__arrow:hover {
+  cursor: pointer;
+}
