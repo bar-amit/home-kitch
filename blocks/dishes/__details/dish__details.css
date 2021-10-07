@@ -1,7 +1,10 @@
 .dishes__details {
   position: relative;
-  top: 224px;
+  top: 187px;
   display: flex;
   justify-content: space-between;
-  margin: 0 15px 0 23px;
+  /* margin: 0 15px 0 23px; */
+  padding: 37px 15px 13px 23px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0) 11.98%, rgba(15, 15, 15, 0.8) 100%);
 }
