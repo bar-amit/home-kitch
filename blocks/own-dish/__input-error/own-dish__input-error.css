@@ -1,0 +1,18 @@
+.own-dish__input-error {
+  width: 200px;
+  height: 50px;
+  visibility: hidden;
+  color: #FD2121;
+  position: absolute;
+  left: calc(100% + 10px);
+  font-family: Mulish;
+  font-size: 14px;
+  line-height: 50px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.own-dish__input-error:last-of-type {
+  top: 55px;
+}

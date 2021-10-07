@@ -1,4 +1,6 @@
 .menu__button {
-  width: 23px;
-  height: 23px;
+  border: none;
+  background-color: transparent;
+  margin: 18px auto 0;
+  padding: 0;
 }

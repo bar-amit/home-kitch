@@ -21,41 +21,42 @@
     </header>
     <main class="main">
       <section class="welcome">
-        <h1 class="welcome__title"> Try your favorite childhood dishes</h1>
-        <p class="welcome__image-title">Salmon pie. From Aunt Betty. Brescia, Italy.</p>
+        <h1 class="welcome__title">Try your favorite childhood dishes</h1>
+        <p class="welcome__image-title">Salmon pie.</p>
+        <p class="welcome__image-title">From Aunt Betty.</p>
+        <p class="welcome__image-title">Brescia, Italy.</p>
         <p class="welcome__price">From <span class="welcome__price-tag">35&#36;</span></p>
-        <img class="welcome__image" src="./images/welcome__img_1.png">
-        <button class="welcome__button" type="button">learn more</button>
+        <img class="welcome__image welcome__image_animate-in" src="./images/welcome__img_1.png">
+        <img class="welcome__image" src="./images/welcome__img_2.png" alt="A boll of borsch soup">
+        <img class="welcome__image" src="./images/welcome__img_3.png" alt="Home style pizza">
+        <a class="welcome__button" href="#menu">learn more</a>
         <div class="welcome__toggle-container">
           <svg
-            class="welcome__toggle-dot"
             width="14"
             height="14"
             viewBox="0 0 14 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="7" cy="7" r="7" fill="#F0935F" />
+            <circle class="welcome__toggle-dot welcome__toggle-dot_active" data-key="0" cx="7" cy="7" r="7" fill="#F0935F" />
           </svg>
           <svg
-            class="welcome__toggle-dot"
             width="14"
             height="14"
             viewBox="0 0 14 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF" />
+            <circle class="welcome__toggle-dot" data-key="1" cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
           <svg
-            class="welcome__toggle-dot"
             width="14"
             height="14"
             viewBox="0 0 14 14"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF" />
+            <circle class="welcome__toggle-dot" data-key="2" cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
         </div>
       </section>
@@ -74,8 +75,8 @@
           <p class="about__paragraph">To feel the taste of home, you can also create the same recipe with our chefs, they will take into account all the wishes and ingredients, contact your grandmother to clarify the subtleties of the recipe and together we will create the same dish from the past.</p>
           <p class="about__paragraph">You and your friends will be able to order it via a special link, and if it becomes popular, we will be able to include it in the main menu and you will receive royalties from sales.</p>
         </div>
-
       </section>
+
       <section class="menu" id="menu">
         <div class="menu__header">
           <h2 class="menu__title">Menu</h2>
@@ -93,7 +94,7 @@
               <p class="dishes__location">Brescia, Italy.</p>
             </div>
             <p class="dishes__price">25$</p>
-          </div>  
+          </div>
           <p class="dishes__description">When our friend Silvio was little, there wasn't a lot of interesting food in his village, but there was a lot of salmon. His grandmother cooked him his favorite salmon pie with cardamom, rosemary and other secret ingredients. We were able to repeat this dish and now it is available to everyone.</p>
         </li>
         <li class="dishes__item">
@@ -104,7 +105,7 @@
               <p class="dishes__location">Siberia, Russia</p>
             </div>
             <p class="dishes__price">52$</p>
-          </div> 
+          </div>
           <p class="dishes__description">When Ivan gets tired of the big city and office work, he orders his favorite warming borscht from Siberia. his aunt Natasha cooked in a special way with the addition of vodka and cranberries. Try it.</p>
         </li>
         <li class="dishes__item">
@@ -115,50 +116,48 @@
               <p class="dishes__location">Naples, Italy.</p>
             </div>
             <p class="dishes__price">40$</p>
-          </div> 
+          </div>
           <p class="dishes__description">Mamma Mia, this is a real Neapolitan pizza. Grandpa Tony has been making it for 40 years and told us about the main secrets. You really can't stop eating, so order two at once.</p>
         </li>
 
-        <button class="menu__button" onclick="hideOrShow()">
-          Click Me
+        <button class="menu__button">
+          <img src="./images/arrow_down.svg" alt="Arrow down" class="menu__button-img">
         </button>
 
-        <div id="hidden">
-          <li class="dishes__item">
-            <img src="./images/dish__image4.png" alt="Mexican Spicy Bowl" class="dishes__image">
-            <div class="dishes__details">
-              <div class="dishes__content">
-                <h3 class="dishes__title">Mexican Spicy Bowl</h3>
-                <p class="dishes__location">Tijuana, Mexico</p>
-              </div>
-              <p class="dishes__price">38$</p>
-            </div> 
-            <p class="dishes__description">Traditional food of Tijuana workers. Simple, but very tasty and healthy. Oh and very spicy</p>
-          </li>
-          <li class="dishes__item">
-            <img src="./images/dish__image5.png" alt="Mr. Jim Buffalo Chicken" class="dishes__image">
-            <div class="dishes__details">
-              <div class="dishes__content">
-                <h3 class="dishes__title">Mr. Jim Buffalo Chicken</h3>
-                <p class="dishes__location">Texas, USA</p>
-              </div>
-              <p class="dishes__price">25$</p>
-            </div> 
-            <p class="dishes__description">This is the chicken that goes best with beer.
-              Mr. Jim in Texas gathers 500 people for his BBQ parties and he knows exactly how to cook an unforgettable chicken.</p>
-          </li>
-          <li class="dishes__item">
-            <img src="./images/dish__image6.png" alt="Moma Ella's apple pie" class="dishes__image">
-            <div class="dishes__details">
-              <div class="dishes__content">
-                <h3 class="dishes__title">Moma Ella's apple pie</h3>
-                <p class="dishes__location">Salzburg, Austria</p>
-              </div>
-              <p class="dishes__price">25$</p>
-            </div> 
-            <p class="dishes__description">This is a warm, sweet, juicy, apple pie from the Austrian countryside. You will not forget this taste, because this recipe is already 50 years old, but no one has yet said that it is tasteless.</p>
-          </li>
-        </div>  
+        <li class="dishes__item dish__item_hidden">
+          <img src="./images/dish__image4.png" alt="Mexican Spicy Bowl" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Mexican Spicy Bowl</h3>
+              <p class="dishes__location">Tijuana, Mexico</p>
+            </div>
+            <p class="dishes__price">38$</p>
+          </div> 
+          <p class="dishes__description">Traditional food of Tijuana workers. Simple, but very tasty and healthy. Oh and very spicy</p>
+        </li>
+        <li class="dishes__item dish__item_hidden">
+          <img src="./images/dish__image5.png" alt="Mr. Jim Buffalo Chicken" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Mr. Jim Buffalo Chicken</h3>
+              <p class="dishes__location">Texas, USA</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div> 
+          <p class="dishes__description">This is the chicken that goes best with beer.
+            Mr. Jim in Texas gathers 500 people for his BBQ parties and he knows exactly how to cook an unforgettable chicken.</p>
+        </li>
+          <li class="dishes__item dish__item_hidden">
+          <img src="./images/dish__image6.png" alt="Moma Ella's apple pie" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Moma Ella's apple pie</h3>
+              <p class="dishes__location">Salzburg, Austria</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div> 
+          <p class="dishes__description">This is a warm, sweet, juicy, apple pie from the Austrian countryside. You will not forget this taste, because this recipe is already 50 years old, but no one has yet said that it is tasteless.</p>
+        </li>
       </ul>
 
       </section>
@@ -170,9 +169,11 @@
           <p class="own-dish__paragraph">We employ professional chefs, experts in all world cuisines. Leave your contacts, our experts will contact you and will be able to restore and create for you your favorite dish from childhood. If necessary, we can even contact your grandmother in the village to find out the subtleties of the recipe.</p>
           <p class="own-dish__paragraph">After we restore your signature dish, you can order it using a unique link and share it with friends.</p>
           <p class="own-dish__paragraph">If your dish is ordered more than 10 times, we will be able to consider it for inclusion in our main menu. Then you will be able to receive royalties from the sale of the dish.</p>
-          <form class="own-dish__form">
-            <input class="own-dish__input" name="user-name" placeholder="Name..."></input>
-            <input class="own-dish__input" name="phone" placeholder="Phone..."></input>
+          <form class="own-dish__form" novalidate>
+            <span class="own-dish__input-error" id="input_name-error"></span>
+            <input class="own-dish__input" id="input_name" name="user-name" placeholder="Name..." minlength="2" maxlength="40" type="text" required></input>
+            <span class="own-dish__input-error" id="input-phone-error"></span>
+            <input class="own-dish__input" id="input-phone" name="phone" placeholder="Phone..." minlength="9" maxlength="12" type="tel" pattern="^[0-9]*$" required></input>
             <button class="own-dish__button" type="submit" disabled="">Let’s make my dish</button>
             <label class="own-dish__label">please fill out the form</label>
           </form>
@@ -180,7 +181,7 @@
             <p class="own-dish__message">Thanks!</p>
             <p class="own-dish__message">Your request is accepted.</p>
             <p class="own-dish__message">We will contact you within 30 minutes.</p>
-            <button class="own-dish__resend-button" type="button" disabled="">Send again</button>
+            <button class="own-dish__button" type="button">Send again</button>
           </div>
         </div>
         <img class="own-dish__image" src="./images/own-dish__img.png">
@@ -195,7 +196,7 @@
       <section class="chefs">
         <h2 class="chefs__title">Our Chefs</h2>
         <p class="chefs__subtitle">We really have a dream team</p>
-        <ul class="chefs__carousel">
+        <div class="chefs__carousel">
           <svg class="chefs__arrow chefs__arrow_direction_left" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M39.9998 73.3337C58.4093 73.3337 73.3332 58.4098 73.3332 40.0003C73.3332 21.5908 58.4093 6.66699 39.9998 6.66699C21.5903 6.66699 6.6665 21.5908 6.6665 40.0003C6.6665 58.4098 21.5903 73.3337 39.9998 73.3337Z" stroke="black" stroke-width="6.66667"/>
             <path d="M44.9998 26.667L31.6665 40.0003L44.9998 53.3337" stroke="black" stroke-width="6.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -203,46 +204,49 @@
           <svg class="chefs__arrow chefs__arrow_direction_right" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M40.0003 73.3337C58.4098 73.3337 73.3337 58.4098 73.3337 40.0003C73.3337 21.5908 58.4098 6.66699 40.0003 6.66699C21.5908 6.66699 6.66699 21.5908 6.66699 40.0003C6.66699 58.4098 21.5908 73.3337 40.0003 73.3337Z" stroke="black" stroke-width="6.66667"/>
             <path d="M35 26.667L48.3333 40.0003L35 53.3337" stroke="black" stroke-width="6.66667" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          <li class="chefs__card">
-            <img class="chefs__image" src="./images/chefs__image_1.png">
-            <h3 class="chefs__name">Ben Chikos</h3>
-            <p class="chefs__paragraph">Japanese, Chinese, Korean cuisine. Sushi Master</p>
-            <p class="chefs__paragraph">For 10 years he was a chef in popular restaurants in Tokyo and Singapore.</p>
-          </li>
-          <li class="chefs__card">
-            <img class="chefs__image" src="./images/chefs__image_2.png">
-            <h3 class="chefs__name">Mike Fouly</h3>
-            <p class="chefs__paragraph">Mediterranean, Russian, Italian  cuisine, Sea food creator.</p>
-            <p class="chefs__paragraph">Worked in the best restaurants in London and Paris.</p>
-          </li>
-          <li class="chefs__card">
-            <img class="chefs__image" src="./images/chefs__image_3.png">
-            <h3 class="chefs__name">Tina Tiny</h3>
-            <p class="chefs__paragraph">Master of baking and desserts. The author of a unique ice cream</p>
-            <p class="chefs__paragraph">For 15 years she worked in her pastry shop, which became the most popular in Australia.</p>
-          </li>
-          <li class="chefs__card">
-            <img class="chefs__image" src="./images/chefs__image_4.png">
-            <h3 class="chefs__name">Sankoy Depee</h3>
-            <p class="chefs__paragraph">French and Italian cuisine, expert in sauces and fermented foods.</p>
-            <p class="chefs__paragraph">Worked in the best restaurants in London and Paris</p>
-          </li>
-          <li class="chefs__card">
-            <img class="chefs__image" src="./images/chefs__image_5.png">
-            <h3 class="chefs__name">Johnny Todd</h3>
-            <p class="chefs__paragraph">BBQ, smoking, languishing, stewing in general cooking meat.</p>
-            <p class="chefs__paragraph">Johnny has already cooked 3,400 steaks and it's only beef.</p>
-          </li>
-          <li class="chefs__card">
-            <img class="chefs__image" src="./images/chefs__image_6.png">
-            <h3 class="chefs__name">Jane Minks</h3>
-            <p class="chefs__paragraph">Indian and Bali expert. Healthy food speacialist.</p>
-            <p class="chefs__paragraph">Higher medical education in nutrition. Extensive experience in preparing food for athletes.</p>
-          </li>
-        </ul>
+          </svg>
+          <ul class="chefs__carousel-viewport">
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_1.png">
+              <h3 class="chefs__name">Ben Chikos</h3>
+              <p class="chefs__paragraph">Japanese, Chinese, Korean cuisine. Sushi Master</p>
+              <p class="chefs__paragraph">For 10 years he was a chef in popular restaurants in Tokyo and Singapore.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_2.png">
+              <h3 class="chefs__name">Mike Fouly</h3>
+              <p class="chefs__paragraph">Mediterranean, Russian, Italian  cuisine, Sea food creator.</p>
+              <p class="chefs__paragraph">Worked in the best restaurants in London and Paris.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_3.png">
+              <h3 class="chefs__name">Tina Tiny</h3>
+              <p class="chefs__paragraph">Master of baking and desserts. The author of a unique ice cream</p>
+              <p class="chefs__paragraph">For 15 years she worked in her pastry shop, which became the most popular in Australia.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_4.png">
+              <h3 class="chefs__name">Sankoy Depee</h3>
+              <p class="chefs__paragraph">French and Italian cuisine, expert in sauces and fermented foods.</p>
+              <p class="chefs__paragraph">Worked in the best restaurants in London and Paris</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_5.png">
+              <h3 class="chefs__name">Johnny Todd</h3>
+              <p class="chefs__paragraph">BBQ, smoking, languishing, stewing in general cooking meat.</p>
+              <p class="chefs__paragraph">Johnny has already cooked 3,400 steaks and it's only beef.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_6.png">
+              <h3 class="chefs__name">Jane Minks</h3>
+              <p class="chefs__paragraph">Indian and Bali expert. Healthy food speacialist.</p>
+              <p class="chefs__paragraph">Higher medical education in nutrition. Extensive experience in preparing food for athletes.</p>
+            </li>
+            </ul>
+          </div>
       </section>
     </main>
+
     <footer class="footer">
       <img src="./images/logo_white.png" alt="Home Kitchen logo" class="footer__logo">
       <ul class="footer__list">
@@ -254,29 +258,9 @@
           <img class="footer__icon" src="./images/logo_instagram.png" alt="Instagram icon"></a></li>
       </ul>
     </footer>
-    <script>
-        function hideOrShow() {
-          
-          // Select the element with id "theDIV"
-          var x = document.querySelector("#hidden");
-          const y = document.querySelector(".menu__button")
-          // If selected element is hidden
-          console.log(y);
-          if (x.style.display === "none") {
-          
-            y.style.display = "none"
-            // Show the hidden element
-            x.style.display = "block";
-            
-            // Else if the selected element is shown
-          } else {
-          
-            // Hide the element
-            x.style.display = "none";
-            y.style.display ="block"
-          }
-        }
 
-    </script>
+    <script type="text/javascript" src="./scripts/validation.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+
   </body>
 </html>

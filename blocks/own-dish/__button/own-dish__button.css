@@ -1,4 +1,5 @@
 .own-dish__button {
+  width: 100%;
   height: 45px;
   background-color: #ED661B;
   color: #FFFF;
@@ -13,6 +14,7 @@
 
 .own-dish__button:hover {
   background-color: #FF8C4B;
+  cursor: pointer;
 }
 
 .own-dish__button:disabled {
