@@ -101,6 +101,7 @@
 @import url(../blocks/footer/__info-number/footer__info-number.css);
 @import url(../blocks/footer/__info/footer__info.css);
 @import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__list-item/footer__list-item.css);
 
 /* modifiers */
 @import url(../blocks/own-dish/__form/_hidden/own-dish__form_hidden.css);

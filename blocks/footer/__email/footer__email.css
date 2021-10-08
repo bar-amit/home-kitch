@@ -7,3 +7,9 @@
   line-height: 24px;
   margin: 13px 0 0 21px;
 }
+
+@media screen and (max-width: 457px) {
+  .footer__email {
+    margin-left: 0;
+  }
+}
