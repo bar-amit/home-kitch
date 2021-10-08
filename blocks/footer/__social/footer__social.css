@@ -4,3 +4,9 @@
   align-items: center;
   margin: 0 183px 0 0;
 }
+
+@media screen and (max-width: 457px) {
+  .footer__social {
+    margin: 20px 0 21px;
+  }
+}

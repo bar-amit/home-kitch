@@ -3,3 +3,11 @@
   height: 72px;
   margin: 0 0 0 165px;
 }
+
+@media screen and (max-width: 457px) {
+  .footer__logo {
+    width: 116px;
+    height: 60px;
+    margin: 21px 0 20px;
+  }
+}
