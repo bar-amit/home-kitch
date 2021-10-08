@@ -13,6 +13,6 @@
 
   .about__image:nth-child(5) {
     max-width: 300px;
-    margin: 10px 10px 0;
+    margin: 10px auto 0;
   }
 }
