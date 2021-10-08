@@ -8,3 +8,9 @@
   position: relative;
   top: 205px;
 }
+
+@media screen and (max-width: 457px) {
+  .dishes__description {
+    max-width: 300px;
+  }
+}

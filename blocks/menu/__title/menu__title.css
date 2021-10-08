@@ -6,3 +6,11 @@
   line-height: 66px;
   margin: 60px 0 0 167px;
 }
+
+@media screen and (max-width: 457px) {
+  .menu__title {
+    margin: 30px 0 0 10px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}

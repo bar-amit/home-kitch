@@ -1,3 +1,9 @@
 .menu__order {
   margin: 63px 330px 0 0;
 }
+
+@media screen and (max-width: 457px) {
+  .menu__order {
+    display: none;
+  }
+}
