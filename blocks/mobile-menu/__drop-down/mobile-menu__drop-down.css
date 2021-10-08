@@ -1,0 +1,6 @@
+.mobile-menu__drop-down {
+  padding-left: 10px;
+  height: 390px;
+  background-color: #ECECEC;
+  z-index: 1000;
+}

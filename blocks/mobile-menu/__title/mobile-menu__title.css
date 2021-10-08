@@ -1,0 +1,11 @@
+.mobile-menu__title {
+  max-width: 145px;
+  margin: 0;
+  font-family: Mulish;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #9E9E9E;
+  margin-bottom: 25px;
+}
