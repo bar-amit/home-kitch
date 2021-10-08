@@ -1,3 +1,6 @@
+// for media queries
+const viewport = window.innerWidth;
+
 /*
   Menu:
 */
@@ -122,16 +125,20 @@ function iterate() {
   setImage();
 }
 
-// restart the rotation from selected image
-toggleElements.forEach(toggle => {
-  toggle.addEventListener("click", function (e) {
-    clearInterval(intervalId);
-    startRotate(e.target.getAttribute("data-key"));
+// @media screen and (min-width: 1050px)
+if(viewport > 1050){
+  // restart the rotation from selected image
+  toggleElements.forEach(toggle => {
+    toggle.addEventListener("click", function (e) {
+      clearInterval(intervalId);
+      startRotate(e.target.getAttribute("data-key"));
+    });
   });
-});
 
-// initialize rotation
-startRotate(0);
+  // initialize rotation
+  startRotate(0);
+
+}
 
 /*
   Chefs Gallery:
