@@ -1,0 +1,8 @@
+.footer__info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Mulish;
+  font-style: normal;
+  margin: 0 auto 0 321px;
+}
