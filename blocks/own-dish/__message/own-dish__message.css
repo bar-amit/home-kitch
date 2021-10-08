@@ -14,3 +14,13 @@
 .own-dish__message:last-of-type {
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 457px) {
+  .own-dish__message {
+    width: 100%;
+  }
+
+  .own-dish__message:last-of-type {
+    margin-bottom: 36px;
+  }
+}

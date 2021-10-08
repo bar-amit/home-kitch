@@ -20,3 +20,9 @@
 .own-dish__button:disabled {
   background-color: #9E9E9E;
 }
+
+@media screen and (max-width: 457px) {
+  .own-dish__button {
+    margin-bottom: 40px;
+  }
+}

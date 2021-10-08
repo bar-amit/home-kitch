@@ -1,0 +1,16 @@
+.own-dish__form-title {
+  display: none;
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish__form-title {
+    display: block;
+    font-family: Philosopher;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+}
