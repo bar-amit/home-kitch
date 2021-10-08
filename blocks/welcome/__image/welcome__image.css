@@ -5,9 +5,16 @@
   object-fit: cover;
   object-position: center;
   top: 0;
+  right: 0;
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+}
+
+@media screen and (max-width) {
+  .welcome__image {
+    right: -25px;
+  }
 }

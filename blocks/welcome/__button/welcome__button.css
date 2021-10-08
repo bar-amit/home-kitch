@@ -1,6 +1,7 @@
 .welcome__button {
   width: 350px;
   height: 56px;
+  margin-bottom: 20px;
   background-color: #ED661B;
   color: #FFFF;
   text-decoration: none;
@@ -17,4 +18,10 @@
 
 .welcome__button:hover {
   background-color: #FF8C4B;
+}
+
+@media screen and (max-width: 1050px){
+  .welcome__button {
+    display: none;
+  }
 }
