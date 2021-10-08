@@ -9,5 +9,6 @@
 @media screen and (max-width: 1440px){
   .page {
     width: 100%;
+    padding-top: 50px;
   }
 }
