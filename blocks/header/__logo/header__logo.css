@@ -10,6 +10,7 @@
   .header__logo {
     width: 57px;
     height: 29px;
+    object-fit: contain;
     margin-left: 10px;
   }
 }
