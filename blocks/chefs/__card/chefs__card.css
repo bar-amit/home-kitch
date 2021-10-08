@@ -9,3 +9,9 @@
   -o-transition: left 1s ease-in-out;
   transition: left 1s ease-in-out;
 }
+
+@media screen and (max-width: 457px) {
+  .chefs__card{
+    height: 440px;
+  }
+}

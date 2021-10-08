@@ -149,18 +149,24 @@ const cards = document.querySelectorAll(".chefs__card");
 const rightButton = document.querySelector(".chefs__arrow_direction_right");
 const leftButton = document.querySelector(".chefs__arrow_direction_left");
 
-const cardWidth = 285;
+// @media screenWidth >/< 1000)
+const cardWidth = viewport > 1000 ? 285 : 265;
 
-const slider = new Slider(
-  cards,
-  {
-    leftControler: leftButton,
-    rightControler: rightButton
-  },
-  {
-    elementWidth: cardWidth,
-    initialPosition: 0,
-    amountOfItems: 4
-  });
+// @media screenWidth >/< 1280)
+const groupSize = viewport > 1280 ? 4 : 3;
 
-slider.initialize();
+if (viewport > 457){
+  const slider = new Slider(
+    cards,
+    {
+      leftControler: leftButton,
+      rightControler: rightButton
+    },
+    {
+      elementWidth: cardWidth,
+      initialPosition: 0,
+      amountOfItems: groupSize
+    });
+
+  slider.initialize();
+}
