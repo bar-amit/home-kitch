@@ -7,3 +7,24 @@
   gap: 30px;
   overflow: hidden;
 }
+
+@media screen and (max-width: 1440px) {
+  .chefs__carousel-viewport {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .chefs__carousel-viewport {
+    gap: 10px
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .chefs__carousel-viewport {
+    flex-direction: column;
+    overflow: auto;
+    gap: 15px;
+    align-items: center;
+  }
+}
