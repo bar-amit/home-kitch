@@ -96,6 +96,11 @@
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__list/footer__list.css);
 @import url(../blocks/footer/__logo/footer__logo.css);
+@import url(../blocks/footer/__email/footer__email.css);
+@import url(../blocks/footer/__info-hours/footer__info-hours.css);
+@import url(../blocks/footer/__info-number/footer__info-number.css);
+@import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__social/footer__social.css);
 
 /* modifiers */
 @import url(../blocks/own-dish/__form/_hidden/own-dish__form_hidden.css);

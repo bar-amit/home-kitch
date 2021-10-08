@@ -1,0 +1,6 @@
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 183px 0 0;
+}
