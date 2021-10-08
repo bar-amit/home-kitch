@@ -3,3 +3,10 @@
   font-size: 18px;
   line-height: 25px;
 }
+
+@media screen and (max-width: 457px) {
+  .header__info-hours {
+    font-size: 8px;
+    line-height: 11px;
+  }
+}
