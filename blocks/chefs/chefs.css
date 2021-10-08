@@ -13,5 +13,6 @@
 @media screen and (max-width: 457px) {
   .chefs {
     padding: 40px 10px  20px 10px;
+    background-color: white;
   }
 }
