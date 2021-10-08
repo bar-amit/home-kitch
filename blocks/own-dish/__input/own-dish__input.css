@@ -8,3 +8,13 @@
   border-radius: 32px;
   outline: 0;
 }
+
+@media screen and (max-width: 457px) {
+  .own-dish__input {
+    margin-bottom: 30px;
+  }
+
+  .own-dish__input:last-of-type {
+    margin-bottom: 35px;
+  }
+}

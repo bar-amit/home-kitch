@@ -6,3 +6,9 @@
   text-align: center;
   color: #9E9E9E;
 }
+
+@media screen and (max-width: 457px) {
+  .own-dish__label {
+    display: none;
+  }
+}

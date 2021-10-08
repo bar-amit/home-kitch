@@ -6,4 +6,24 @@
   line-height: 1.1;
   margin: 0;
   margin-bottom: 15px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish__subtitle{
+      display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .own-dish__subtitle{
+      position: absolute;
+      top: 146px;
+      margin: 0 calc((100vw - 200px) / 2);
+      text-align: center;
+      font-size: 16px;
+      max-width: 200px;
+      z-index: 100;
+  }
 }
