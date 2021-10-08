@@ -9,7 +9,6 @@
   .video {
     min-height: 235px;
     align-items: baseline;
-    padding: 10px 10px 0;
-    margin: 0 auto 0;
+    margin: 10px auto 0;
   }
 }
