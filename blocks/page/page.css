@@ -10,5 +10,6 @@
   .page {
     width: 100%;
     padding-top: 50px;
+    top: -50px;
   }
 }
