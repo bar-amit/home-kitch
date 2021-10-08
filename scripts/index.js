@@ -1,6 +1,28 @@
 // for media queries
 const viewport = window.innerWidth;
 
+
+/*
+  Header mobile-menu:
+*/
+
+if(viewport < 457){
+  const menuVisibleClass = 'mobile-menu_visible';
+
+  const mobileMenuButton = document.querySelector('.header__burger');
+  const menuElement = document.querySelector('.mobile-menu');
+  const linkElements = document.querySelectorAll('.mobile-menu__link');
+
+  mobileMenuButton.addEventListener('click', function(){
+    menuElement.classList.toggle(menuVisibleClass);
+  });
+
+  linkElements.forEach(link => link.addEventListener('click', () => {
+    menuElement.classList.remove(menuVisibleClass);
+  }));
+
+}
+
 /*
   Menu:
 */
