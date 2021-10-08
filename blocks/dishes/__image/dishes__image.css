@@ -1,3 +1,9 @@
 .dishes__image {
   position: absolute;
 }
+
+@media screen and (max-width: 457px) {
+  .dishes__image {
+    max-width: 300px;
+  }
+}
