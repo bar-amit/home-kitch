@@ -1,0 +1,18 @@
+.about__image:nth-child(1) {
+  margin: 22px 0 75px 104px;
+}
+
+.about__image:nth-child(5) {
+  margin: 60px 108px 0 0;
+}
+
+@media screen and (max-width: 457px) {
+  .about__image:nth-child(1) {
+    display: none;
+  }
+
+  .about__image:nth-child(5) {
+    max-width: 300px;
+    margin: 10px auto 0;
+  }
+}

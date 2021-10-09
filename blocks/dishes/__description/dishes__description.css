@@ -1,0 +1,16 @@
+.dishes__description {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  position: relative;
+  top: 205px;
+}
+
+@media screen and (max-width: 457px) {
+  .dishes__description {
+    max-width: 300px;
+  }
+}

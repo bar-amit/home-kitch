@@ -1,0 +1,20 @@
+.welcome__price-tag {
+  font-family: Philosopher;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 457px) {
+  .welcome__price-tag {
+    font-size: 44px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .welcome__price-tag {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+}

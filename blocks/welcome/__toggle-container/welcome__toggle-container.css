@@ -1,0 +1,22 @@
+.welcome__toggle-container {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 90px;
+  margin: 0 calc((100% - 90px) / 2);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1342px){
+  .welcome__toggle-container {
+    margin: 0 auto 0 626px;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .welcome__toggle-container {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.welcome__price {
+  margin: 0;
+  font-family: Mulish;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 55px;
+  z-index: 100;
+}
+
+@media screen and (max-width: 840px) {
+  .welcome__price {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .welcome__price {
+    font-size: 13px;
+  }
+}

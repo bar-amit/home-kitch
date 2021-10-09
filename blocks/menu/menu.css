@@ -1,0 +1,13 @@
+.menu {
+  max-height: 1200px;
+  min-height: 750px;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 457px) {
+  .menu {
+    max-height: 3000px;
+    min-width: none;
+    background-color: white;
+  }
+}

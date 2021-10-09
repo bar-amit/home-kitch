@@ -1,0 +1,24 @@
+.chefs__carousel {
+  position: relative;
+}
+
+@media screen and (max-width: 1440px){
+  .chefs__carousel{
+    width: 1110px;
+    margin: 0 calc((100% - 1100px) / 2);
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .chefs__carousel{
+    width: 825px;
+    margin: 0 calc((100% - 825px) / 2);
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .chefs__carousel{
+    width: 785px;
+    margin: 0 calc((100% - 785px) / 2);
+  }
+}

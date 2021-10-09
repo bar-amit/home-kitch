@@ -1,0 +1,17 @@
+.own-dish__form {
+  height: 190px;
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish__form {
+    height: auto;
+    margin: 0 10px;
+  }
+}

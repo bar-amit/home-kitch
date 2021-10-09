@@ -1,0 +1,17 @@
+.own-dish__submit-message {
+  max-width: 445px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish__submit-message {
+    margin: 0 10px;
+    height: 300px;
+    justify-content: flex-end;
+  }
+}

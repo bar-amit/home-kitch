@@ -1,0 +1,5 @@
+.menu__header {
+  max-height: 120px;
+  display: flex;
+  justify-content: space-between;
+}

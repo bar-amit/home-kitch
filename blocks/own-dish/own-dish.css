@@ -1,0 +1,34 @@
+.own-dish {
+  padding: 50px 165px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: column;
+}
+
+@media screen and (max-width: 1430px) {
+  .own-dish {
+    padding: 3% 10%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .own-dish {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .own-dish {
+    padding: 2% 1%;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}

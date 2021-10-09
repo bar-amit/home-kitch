@@ -1,0 +1,12 @@
+.about {
+  display: flex;
+  padding: 60px 165px 90px;
+}
+
+@media screen and (max-width: 457px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}

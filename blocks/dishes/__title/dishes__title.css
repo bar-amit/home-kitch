@@ -1,0 +1,16 @@
+.dishes__title {
+  color: white;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0;
+}
+
+@media screen and (max-width: 457px) {
+  .dishes__title {
+    max-width: 300px;
+    color: black;
+  }
+}

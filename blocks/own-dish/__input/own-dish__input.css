@@ -1,0 +1,20 @@
+.own-dish__input {
+  padding-left: 20px;
+  height: 45px;
+  font-family: Mulish;
+  font-size: 18px;
+  line-height: 1.4;
+  border: 1px solid #9E9E9E;
+  border-radius: 32px;
+  outline: 0;
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish__input {
+    margin-bottom: 30px;
+  }
+
+  .own-dish__input:last-of-type {
+    margin-bottom: 35px;
+  }
+}

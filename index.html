@@ -1,51 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="root" lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Jam</title>
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
     <header class="header">
-      <img class="header__logo">
       <nav class="header__nav">
-        <a class="header__link" href="#about">about</a>
-        <a class="header__link" href="#menu">menu</a>
-        <a class="header__link" href="#own-dish">own dish</a>
+        <a class="header__link" href="#about">About</a>
+        <a class="header__link" href="#menu">Menu</a>
+        <a class="header__link" href="#own-dish">Own Dish</a>
       </nav>
+      <img src="./images/logo.png" alt="Home Kitchen logo" class="header__logo">
+      <div class="header__info">
+        <p class="header__info-number">8-700-20-10</p>
+        <p class="header__info-hours">Every day from 8 to 22</p>
+      </div>
+      <div class="header__burger"></div>
+
     </header>
     <main class="main">
       <section class="welcome">
-        <h1 class="welcome__title"> Try your favorite childhood dishes</h1>
-        <p class="welcome__image-title">Salmon pie. From Aunt Betty. Brescia, Italy.</p>
+        <h1 class="welcome__title">Try your favorite childhood dishes</h1>
+        <p class="welcome__image-title">Salmon pie.</p>
+        <p class="welcome__image-title">From Aunt Betty.</p>
+        <p class="welcome__image-title">Brescia, Italy.</p>
         <p class="welcome__price">From <span class="welcome__price-tag">35&#36;</span></p>
-        <img class="welcome__image" src="./images/welcome__img_1.png">
-        <button class="welcome__button" type="button">learn more</button>
+        <img class="welcome__image welcome__image_name_salmon welcome__image_animate-in" src="./images/welcome__img_1.png">
+        <img class="welcome__image welcome__image_name_borsch" src="./images/welcome__img_2.png" alt="A boll of borsch soup">
+        <img class="welcome__image welcome__image_name_pizza" src="./images/welcome__img_3.png" alt="Home style pizza">
+        <a class="welcome__button" href="#menu">learn more</a>
         <div class="welcome__toggle-container">
-          <svg class="welcome__toggle-dot" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7" cy="7" r="7" fill="#F0935F"/>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle class="welcome__toggle-dot welcome__toggle-dot_active" data-key="0" cx="7" cy="7" r="7" fill="#F0935F" />
           </svg>
-          <svg class="welcome__toggle-dot" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF"/>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle class="welcome__toggle-dot" data-key="1" cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
-          <svg class="welcome__toggle-dot" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="7" cy="7" r="7" fill="#FFFFFF"/>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle class="welcome__toggle-dot" data-key="2" cx="7" cy="7" r="7" fill="#FFFFFF" />
           </svg>
         </div>
       </section>
       <section class="about" id="about">
-
+        <div class="about__page">
+          <h2 class="about__title">About the restaurant</h2>
+          <p class="about__paragraph">During the pandemic, many people remained trapped in foreign countries. Some have just been working abroad for a long time and are very homesick.</p>
+          <p class="about__paragraph">Perhaps you haven't eaten your mom's signature soup or your grandma's meat pie for many years, and you can't get the French meat from your aunt Zoey out of your head. </p>
+          <p class="about__paragraph"><span class="about__span-accent">
+            We are ready to help you prepare that very dish.</span></p>
+          <img src="./images/about_left.png" alt="Chefs cooking" class="about__image">
+        </div>
+        <div class="about__page">
+          <img src="./images/about_right.png" alt="Happy family in the Kitchen" class="about__image">
+          <p class="about__paragraph">Our menu features the best homemade dishes of our customers from all over the world. Each dish has its own story and its own fans. Only dishes with a high rating are included in our menu.</p>
+          <p class="about__paragraph">To feel the taste of home, you can also create the same recipe with our chefs, they will take into account all the wishes and ingredients, contact your grandmother to clarify the subtleties of the recipe and together we will create the same dish from the past.</p>
+          <p class="about__paragraph">You and your friends will be able to order it via a special link, and if it becomes popular, we will be able to include it in the main menu and you will receive royalties from sales.</p>
+        </div>
       </section>
+
       <section class="menu" id="menu">
+        <div class="menu__header">
+          <h2 class="menu__title">Menu</h2>
+          <div class="menu__order">
+            <p class="menu__order-item">call us to order</p>
+            <p class="menu__order-item">8-700-20-10</p>
+          </div>
+        </div>
+      <ul class="dishes">
+        <li class="dishes__item">
+          <img src="./images/dish__image1.png" alt="Aunt Betty Salmon pie" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Aunt Betty Salmon pie</h3>
+              <p class="dishes__location">Brescia, Italy.</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div>
+          <p class="dishes__description">When our friend Silvio was little, there wasn't a lot of interesting food in his village, but there was a lot of salmon. His grandmother cooked him his favorite salmon pie with cardamom, rosemary and other secret ingredients. We were able to repeat this dish and now it is available to everyone.</p>
+        </li>
+        <li class="dishes__item">
+          <img src="./images/dish__image2.png" alt="Tetya Natasha Borsch" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Tetya Natasha Borsch</h3>
+              <p class="dishes__location">Siberia, Russia</p>
+            </div>
+            <p class="dishes__price">52$</p>
+          </div>
+          <p class="dishes__description">When Ivan gets tired of the big city and office work, he orders his favorite warming borscht from Siberia. his aunt Natasha cooked in a special way with the addition of vodka and cranberries. Try it.</p>
+        </li>
+        <li class="dishes__item">
+          <img src="./images/dish__image3.png" alt="Grandpa Tony’s pizza" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Grandpa Tony’s pizza</h3>
+              <p class="dishes__location">Naples, Italy.</p>
+            </div>
+            <p class="dishes__price">40$</p>
+          </div>
+          <p class="dishes__description">Mamma Mia, this is a real Neapolitan pizza. Grandpa Tony has been making it for 40 years and told us about the main secrets. You really can't stop eating, so order two at once.</p>
+        </li>
+
+        <button class="menu__button">
+          <img src="./images/arrow_down.svg" alt="Arrow down" class="menu__button-img">
+        </button>
+
+        <li class="dishes__item dish__item_hidden">
+          <img src="./images/dish__image4.png" alt="Mexican Spicy Bowl" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Mexican Spicy Bowl</h3>
+              <p class="dishes__location">Tijuana, Mexico</p>
+            </div>
+            <p class="dishes__price">38$</p>
+          </div>
+          <p class="dishes__description">Traditional food of Tijuana workers. Simple, but very tasty and healthy. Oh and very spicy</p>
+        </li>
+        <li class="dishes__item dish__item_hidden">
+          <img src="./images/dish__image5.png" alt="Mr. Jim Buffalo Chicken" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Mr. Jim Buffalo Chicken</h3>
+              <p class="dishes__location">Texas, USA</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div>
+          <p class="dishes__description">This is the chicken that goes best with beer.
+            Mr. Jim in Texas gathers 500 people for his BBQ parties and he knows exactly how to cook an unforgettable chicken.</p>
+        </li>
+          <li class="dishes__item dish__item_hidden">
+          <img src="./images/dish__image6.png" alt="Moma Ella's apple pie" class="dishes__image">
+          <div class="dishes__details">
+            <div class="dishes__content">
+              <h3 class="dishes__title">Moma Ella's apple pie</h3>
+              <p class="dishes__location">Salzburg, Austria</p>
+            </div>
+            <p class="dishes__price">25$</p>
+          </div>
+          <p class="dishes__description">This is a warm, sweet, juicy, apple pie from the Austrian countryside. You will not forget this taste, because this recipe is already 50 years old, but no one has yet said that it is tasteless.</p>
+        </li>
+      </ul>
 
       </section>
-      <section class="own-dish" id="#own-dish">
 
+      <section class="own-dish" id="own-dish">
+
+          <h2 class="own-dish__title">Make your own childhood dish.</h2>
+          <h3 class="own-dish__subtitle">You’re telling us  -  We’re cooking and deliver</h3>
+          <p class="own-dish__paragraph">We employ professional chefs, experts in all world cuisines. Leave your contacts, our experts will contact you and will be able to restore and create for you your favorite dish from childhood. If necessary, we can even contact your grandmother in the village to find out the subtleties of the recipe.</p>
+          <p class="own-dish__paragraph">After we restore your signature dish, you can order it using a unique link and share it with friends.</p>
+          <p class="own-dish__paragraph">If your dish is ordered more than 10 times, we will be able to consider it for inclusion in our main menu. Then you will be able to receive royalties from the sale of the dish.</p>
+          <form class="own-dish__form" novalidate>
+            <h3 class="own-dish__form-title">Make your own childhood dish.</h3>
+            <span class="own-dish__input-error" id="input_name-error"></span>
+            <input class="own-dish__input" id="input_name" name="user-name" placeholder="Name..." minlength="2" maxlength="40" type="text" required></input>
+            <span class="own-dish__input-error" id="input-phone-error"></span>
+            <input class="own-dish__input" id="input-phone" name="phone" placeholder="Phone..." minlength="9" maxlength="12" type="tel" pattern="^[0-9]*$" required></input>
+            <button class="own-dish__button" type="submit" disabled="">Let’s make my dish</button>
+            <label class="own-dish__label">please fill out the form</label>
+          </form>
+          <div class="own-dish__submit-message own-dish__submit-message_hidden">
+            <p class="own-dish__message">Thanks!</p>
+            <p class="own-dish__message">Your request is accepted.</p>
+            <p class="own-dish__message">We will contact you within 30 minutes.</p>
+            <button class="own-dish__button" type="button">Send again</button>
+          </div>
+
+        <img class="own-dish__image" src="./images/own-dish__img.png">
+      </section>
+
+      <section class="video" id="video">
+        <h2 class="video__title">How it works.</h2>
+        <p class="video__subtitle">Watch our little promo video</p>
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/rFYpmJWJxGE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section class="chefs" id="chefs">
+        <h2 class="chefs__title">Our Chefs</h2>
+        <p class="chefs__subtitle">We really have a dream team</p>
+        <div class="chefs__carousel">
+          <svg class="chefs__arrow chefs__arrow_direction_left" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M44.9998 26.667L31.6665 40.0003L44.9998 53.3337" stroke="#1D1D1D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="chefs__arrow chefs__arrow_direction_right" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35 26.667L48.3333 40.0003L35 53.3337" stroke="#1D1D1D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <ul class="chefs__carousel-viewport">
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_1.png">
+              <h3 class="chefs__name">Ben Chikos</h3>
+              <p class="chefs__paragraph">Japanese, Chinese, Korean cuisine. Sushi Master</p>
+              <p class="chefs__paragraph">For 10 years he was a chef in popular restaurants in Tokyo and Singapore.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_2.png">
+              <h3 class="chefs__name">Mike Fouly</h3>
+              <p class="chefs__paragraph">Mediterranean, Russian, Italian  cuisine, Sea food creator.</p>
+              <p class="chefs__paragraph">Worked in the best restaurants in London and Paris.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_3.png">
+              <h3 class="chefs__name">Tina Tiny</h3>
+              <p class="chefs__paragraph">Master of baking and desserts. The author of a unique ice cream</p>
+              <p class="chefs__paragraph">For 15 years she worked in her pastry shop, which became the most popular in Australia.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_4.png">
+              <h3 class="chefs__name">Sankoy Depee</h3>
+              <p class="chefs__paragraph">French and Italian cuisine, expert in sauces and fermented foods.</p>
+              <p class="chefs__paragraph">Worked in the best restaurants in London and Paris</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_5.png">
+              <h3 class="chefs__name">Johnny Todd</h3>
+              <p class="chefs__paragraph">BBQ, smoking, languishing, stewing in general cooking meat.</p>
+              <p class="chefs__paragraph">Johnny has already cooked 3,400 steaks and it's only beef.</p>
+            </li>
+            <li class="chefs__card">
+              <img class="chefs__image" src="./images/chefs__image_6.png">
+              <h3 class="chefs__name">Jane Minks</h3>
+              <p class="chefs__paragraph">Indian and Bali expert. Healthy food speacialist.</p>
+              <p class="chefs__paragraph">Higher medical education in nutrition. Extensive experience in preparing food for athletes.</p>
+            </li>
+            </ul>
+          </div>
       </section>
     </main>
-    <footer class="footer">
 
+    <footer class="footer" id="contacts">
+      <img src="./images/logo_white.png" alt="Home Kitchen logo" class="footer__logo">
+      <div class="footer__info">
+        <p class="footer__info-number">8-700-20-10</p>
+        <p class="footer__info-hours">Every day from 8 to 22</p>
+      </div>
+      <div class="footer__social" >
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__link" href="#">
+            <img class="footer__icon" src="./images/logo_facebook.svg" alt="Facebook icon"></a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">
+            <img class="footer__icon" src="./images/logo_youtube.svg" alt="Youtube icon"></a></li>
+          <li class="footer__list-item"><a class="footer__link" href="#">
+            <img class="footer__icon" src="./images/logo_instagram.svg" alt="Instagram icon"></a></li>
+        </ul>
+        <p class="footer__email">homek@codejam.com</p>
+      </div>
     </footer>
+
+    <div class="mobile-menu">
+      <nav class="mobile-menu__drop-down">
+        <h3 class="mobile-menu__title">Navigation</h3>
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="#about">About the resturante</a></li>
+          <li><a class="mobile-menu__link" href="#menu">Menu</a></li>
+          <li><a class="mobile-menu__link" href="#own-dish">Own dish</a></li>
+          <li><a class="mobile-menu__link" href="#video">How it works</a></li>
+          <li><a class="mobile-menu__link" href="#chefs">Our chefs</a></li>
+          <li><a class="mobile-menu__link" href="#contacts">Contacts</a></li>
+        </nav>
+      </nav>
+    </div>
+
+    <script type="text/javascript" src="./scripts/validation.js"></script>
+    <script type="text/javascript" src="./scripts/slider.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+
   </body>
 </html>

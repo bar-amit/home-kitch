@@ -1,0 +1,7 @@
+.welcome__toggle-dot {
+  fill: #FFFFFF;
+}
+
+.welcome__toggle-dot:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.dishes__price {
+  font-family: Philosopher;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 33px;
+  color: white;
+  margin: 0;
+}
+
+@media screen and (max-width: 457px) {
+  .dishes__price {
+    color: black;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}

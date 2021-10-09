@@ -2,6 +2,9 @@
 @import url(../vendor/fonts.css);
 @import url(../vendor/normalize.css);
 
+/* root */
+@import url(../blocks/root/root.css);
+
 /* page */
 @import url(../blocks/page/page.css);
 
@@ -10,7 +13,10 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__nav/header__nav.css);
 @import url(../blocks/header/__link/header__link.css);
-
+@import url(../blocks/header/__info/header__info.css);
+@import url(../blocks/header/__info-hours/header__info-hours.css);
+@import url(../blocks/header/__info-number/header__info-number.css);
+@import url(../blocks/header/__burger/header__burger.css);
 /* main */
 @import url(../blocks/main/main.css);
 
@@ -22,19 +28,97 @@
 @import url(../blocks/welcome/__toggle-container/welcome__toggle-container.css);
 @import url(../blocks/welcome/__toggle-dot/welcome__toggle-dot.css);
 @import url(../blocks/welcome/__button/welcome__button.css);
-
-/* about */
-@import url(../blocks/about/about.css);
-
-/* menu */
-@import url(../blocks/menu/menu.css);
-
-/* own-dish */
-@import url(../blocks/own-dish/own-dish.css);
-
-/* footer */
-@import url(../blocks/footer/footer.css);
-/* welcome */
 @import url(../blocks/welcome/__price/welcome__price.css);
 @import url(../blocks/welcome/__price-tag/welcome__price-tag.css);
 
+/* about */
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__paragraph/about__paragraph.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__page/about__page.css);
+@import url(../blocks/about/__span-accent/about__span-accent.css);
+@import url(../blocks/about/__image/about__image.css);
+
+/* menu */
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__header/menu__header.css);
+@import url(../blocks/menu/__order/menu__order.css);
+@import url(../blocks/menu/__title/menu__title.css);
+@import url(../blocks/menu/__order-item/menu__order-item.css);
+@import url(../blocks/menu/__button/menu__button.css);
+@import url(../blocks/menu/__button-image/menu__button-image.css);
+
+/* dishes */
+@import url(../blocks/dishes/dishes.css);
+@import url(../blocks/dishes/__image/dishes__image.css);
+@import url(../blocks/dishes/__description/dishes__description.css);
+@import url(../blocks/dishes/__details/dish__details.css);
+@import url(../blocks/dishes/__item/dishes__item.css);
+@import url(../blocks/dishes/__location/dishes__location.css);
+@import url(../blocks/dishes/__price/dishes__price.css);
+@import url(../blocks/dishes/__title/dishes__title.css);
+
+/* own-dish */
+@import url(../blocks/own-dish/own-dish.css);
+@import url(../blocks/own-dish/__title/own-dish__title.css);
+@import url(../blocks/own-dish/__subtitle/own-dish__subtitle.css);
+@import url(../blocks/own-dish/__paragraph/own-dish__paragraph.css);
+@import url(../blocks/own-dish/__form/own-dish__form.css);
+@import url(../blocks/own-dish/__input/own-dish__input.css);
+@import url(../blocks/own-dish/__button/own-dish__button.css);
+@import url(../blocks/own-dish/__label/own-dish__label.css);
+@import url(../blocks/own-dish/__submit-message/own-dish__submit-message.css);
+@import url(../blocks/own-dish/__message/own-dish__message.css);
+@import url(../blocks/own-dish/__image/own-dish__image.css);
+@import url(../blocks/own-dish/__input-error/own-dish__input-error.css);
+@import url(../blocks/own-dish/__form-title/own-dish__form-title.css);
+
+/* video */
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/video/__subtitle/video__subtitle.css);
+@import url(../blocks/video/__title/video__title.css);
+
+/* chefs */
+@import url(../blocks/chefs/chefs.css);
+@import url(../blocks/chefs/__title/chefs__title.css);
+@import url(../blocks/chefs/__subtitle/chefs__subtitle.css);
+@import url(../blocks/chefs/__carousel/chefs__carousel.css);
+@import url(../blocks/chefs/__card/chefs__card.css);
+@import url(../blocks/chefs/__image/chefs__image.css);
+@import url(../blocks/chefs/__name/chefs__name.css);
+@import url(../blocks/chefs/__paragraph/chefs__paragraph.css);
+@import url(../blocks/chefs/__arrow/chefs__arrow.css);
+@import url(../blocks/chefs/__carousel-viewport/chefs__carousel-viewport.css);
+
+/* footer */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__icon/footer__icon.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__list/footer__list.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
+@import url(../blocks/footer/__email/footer__email.css);
+@import url(../blocks/footer/__info-hours/footer__info-hours.css);
+@import url(../blocks/footer/__info-number/footer__info-number.css);
+@import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__list-item/footer__list-item.css);
+
+/* mobile-menu */
+@import url(../blocks/mobile-menu/mobile-menu.css);
+@import url(../blocks/mobile-menu/__drop-down/mobile-menu__drop-down.css);
+@import url(../blocks/mobile-menu/__title/mobile-menu__title.css);
+@import url(../blocks/mobile-menu/__list/mobile-menu__list.css);
+@import url(../blocks/mobile-menu/__link/mobile-menu__link.css);
+
+/* modifiers */
+@import url(../blocks/own-dish/__form/_hidden/own-dish__form_hidden.css);
+@import url(../blocks/own-dish/__submit-message/_hidden/own-dish__submit-message_hidden.css);
+@import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_left.css);
+@import url(../blocks/chefs/__arrow/_direction/chefs__arrow_direction_right.css);
+@import url(../blocks/welcome/__image/_animate-in/welcome__image_animate-in.css);
+@import url(../blocks/welcome/__toggle-dot/_active/welcome__toggle-dot_active.css);
+@import url(../blocks/own-dish/__input-error/_visible/own-dish__input-error_visible.css);
+@import url(../blocks/own-dish/__input/_error/ownd-dish__input_error.css);
+@import url(../blocks/dishes/__item/__item_hidden/dishes__item_hidden.css);
+@import url(../blocks/mobile-menu/_visible/mobile-menu_visible.css);

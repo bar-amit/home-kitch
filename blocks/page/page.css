@@ -1,0 +1,15 @@
+.page {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  color: #1D1D1D;
+  background-color: white;
+}
+
+@media screen and (max-width: 1440px){
+  .page {
+    width: 100%;
+    padding-top: 50px;
+    top: -50px;
+  }
+}

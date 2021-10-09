@@ -1,0 +1,18 @@
+.chefs {
+  padding: 50px 165px 120px 165px;
+  background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 1440px) {
+  .chefs {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .chefs {
+    padding: 40px 10px  20px 10px;
+    background-color: white;
+  }
+}

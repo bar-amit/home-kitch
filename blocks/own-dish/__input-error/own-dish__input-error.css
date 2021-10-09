@@ -1,0 +1,30 @@
+.own-dish__input-error {
+  width: 180px;
+  visibility: hidden;
+  color: #FD2121;
+  position: absolute;
+  top: calc((45px - 28px) / 2);
+  left: calc(100% + 10px);
+  font-family: Mulish;
+  font-size: 10px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.own-dish__input-error:last-of-type {
+  top: 55px;
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish__input-error {
+    font-size: 12px;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .own-dish__input-error:last-of-type {
+    top: 180px;
+  }
+}

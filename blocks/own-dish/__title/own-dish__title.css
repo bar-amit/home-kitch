@@ -1,0 +1,48 @@
+.own-dish__title {
+  max-width: 445px;
+  font-family: Philosopher;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 25px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+@media screen and (max-width: 457px) {
+  .own-dish__title {
+    position: absolute;
+    top: 60px;
+    margin: 0 calc((100vw - 250px) / 2);
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    max-width: 250px;
+    z-index: 100;
+  }
+
+  .own-dish__title::after {
+    content: "You’re telling us We’re cooking and deliver";
+    position: absolute;
+    top: calc(100% + 40px);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 22px;
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .own-dish__title {
+    top: 55px;
+    margin: 0 calc((100vw - 200px) / 2);
+    font-size: 24px;
+    max-width: 200px;
+  }
+
+  .own-dish__title::after {
+    font-size: 16px;
+  }
+}

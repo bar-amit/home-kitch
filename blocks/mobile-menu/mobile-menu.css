@@ -1,0 +1,8 @@
+.mobile-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 50px;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  z-index: 999;
+}

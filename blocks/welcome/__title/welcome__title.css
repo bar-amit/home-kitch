@@ -1,0 +1,34 @@
+.welcome__title {
+  width: 755px;
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 80px;
+  z-index: 100;
+  margin: 0 0 35px 0;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1050px){
+  .welcome__title{
+    max-width: 50%;
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 840px){
+  .welcome__title{
+    max-width: 280px;
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .welcome__title {
+    max-width: 190px;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+}

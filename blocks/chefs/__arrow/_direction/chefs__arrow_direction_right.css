@@ -1,0 +1,9 @@
+.chefs__arrow_direction_right {
+  right: -85px;
+}
+
+@media screen and (max-width: 1000px) {
+  .chefs__arrow_direction_right {
+    right: -60px;
+  }
+}

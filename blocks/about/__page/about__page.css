@@ -1,0 +1,12 @@
+.about__page {
+  max-width: 555px;
+  color: #1d1d1d;
+}
+
+@media screen and (max-width: 457px) {
+  .about__page {
+    max-width: 457px;
+    display: flex;
+    flex-direction: column;
+  }
+}

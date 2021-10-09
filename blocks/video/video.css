@@ -1,0 +1,14 @@
+.video {
+  min-height: 619px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 457px) {
+  .video {
+    min-height: 235px;
+    align-items: baseline;
+    margin: 10px 0 40px;
+  }
+}

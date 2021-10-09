@@ -1,0 +1,14 @@
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 139px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 457px) {
+  .dishes {
+    flex-direction: column;
+    margin: 15px 10px 0;
+  }
+}
