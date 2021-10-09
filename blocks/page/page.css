@@ -9,7 +9,11 @@
 @media screen and (max-width: 1440px){
   .page {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .page {
     padding-top: 50px;
-    top: -50px;
   }
 }
