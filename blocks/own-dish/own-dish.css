@@ -1,6 +1,0 @@
-.own-dish {
-  padding: 50px 165px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-flow: column;
-}
