@@ -120,5 +120,5 @@
 @import url(../blocks/welcome/__toggle-dot/_active/welcome__toggle-dot_active.css);
 @import url(../blocks/own-dish/__input-error/_visible/own-dish__input-error_visible.css);
 @import url(../blocks/own-dish/__input/_error/ownd-dish__input_error.css);
-@import url(../blocks/dishes/__item/__item_hidden/dishes__item_hidden.css);
+@import url(../blocks/dishes/_open/dishes_open.css);
 @import url(../blocks/mobile-menu/_visible/mobile-menu_visible.css);

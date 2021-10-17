@@ -28,14 +28,13 @@ if(viewport < 457){
 */
 
 const showButton = document.querySelector(".menu__button");
-const hiddenItems = document.querySelectorAll(".dish__item_hidden");
+const dishesElement = document.querySelector(".dishes")
 
 showButton.addEventListener("click", hideOrShow);
 
 function hideOrShow(e) {
-  hiddenItems.forEach(item => {
-    item.classList.remove("dish__item_hidden");
-  });
+  dishesElement.classList.add("dishes_open")
+
   showButton.remove();
 }
 
