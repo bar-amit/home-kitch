@@ -148,7 +148,7 @@ function iterate() {
 }
 
 // @media screen and (min-width: 1050px)
-if(viewport > 1050){
+if(viewport > 457){
   // restart the rotation from selected image
   toggleElements.forEach(toggle => {
     toggle.addEventListener("click", function (e) {
