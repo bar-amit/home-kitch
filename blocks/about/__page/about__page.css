@@ -1,12 +1,21 @@
 .about__page {
-  max-width: 555px;
+  max-width: 37vw;
   color: #1d1d1d;
+}
+
+@media screen and (max-width: 670px) {
+  .about__page {
+    max-width: none;
+    padding: 0 35px;
+    width: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 457px) {
   .about__page {
-    max-width: 457px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
 }

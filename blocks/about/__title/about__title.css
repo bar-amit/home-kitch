@@ -3,14 +3,22 @@
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
-  line-height: 66px;
+  line-height: 1.1;
   margin: 0 0 30px;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 1000px) {
+  .about__title {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 670px) {
   .about__title {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1;
     margin: 15px 0 0 11px;
   }
 }
