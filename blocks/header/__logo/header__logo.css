@@ -11,6 +11,7 @@
     width: 57px;
     height: 29px;
     object-fit: contain;
+    margin: 0;
     margin-left: 10px;
   }
 }

@@ -7,6 +7,6 @@
 
 @media screen and (max-width: 457px) {
   .header__info {
-    margin-right: 68px;
+    margin: 0;
   }
 }
