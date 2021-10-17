@@ -3,3 +3,18 @@
   color: #1d1d1d;
   padding-right: 50px;
 }
+
+.header__link:nth-child(3) {
+  padding: 0;
+}
+
+@media screen and (max-width:1270px) {
+  .header__link {
+    padding-right: 25px;
+    font-size: 18px;
+  }
+
+  .header__link:nth-child(3) {
+    padding: 0;
+  }
+}

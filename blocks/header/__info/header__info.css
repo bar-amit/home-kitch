@@ -5,8 +5,22 @@
   margin-right: 165px;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width:1270px) {
   .header__info {
     margin: 0;
+    width: 247px;
+    align-items: end;
+  }  
+}
+
+@media screen and (max-width:1000px) {
+  .header__info {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header__info {
+    width: max-content
   }
 }
