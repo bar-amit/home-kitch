@@ -10,7 +10,15 @@
   grid-row: 1/2;
 }
 
-@media screen and (max-width: 457px) {
+
+@media screen and (max-width: 1250px) {
+  .own-dish__title {
+    margin-bottom: 5px;
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 920px) {
   .own-dish__title {
     position: absolute;
     top: 60px;

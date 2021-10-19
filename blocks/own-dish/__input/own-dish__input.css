@@ -9,7 +9,7 @@
   outline: 0;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 920px) {
   .own-dish__input {
     margin-bottom: 30px;
   }

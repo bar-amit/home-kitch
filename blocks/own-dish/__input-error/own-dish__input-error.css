@@ -15,7 +15,7 @@
   top: 55px;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 920px) {
   .own-dish__input-error {
     font-size: 12px;
     left: 0;

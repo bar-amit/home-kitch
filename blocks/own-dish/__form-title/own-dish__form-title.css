@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 920px) {
   .own-dish__form-title {
     display: block;
     font-family: Philosopher;

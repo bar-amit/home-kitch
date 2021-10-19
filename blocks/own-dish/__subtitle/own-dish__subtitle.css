@@ -10,7 +10,13 @@
   grid-row: 2/3;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 1250px) {
+  .own-dish__subtitle {
+    font-size: 18px;
+  }  
+}
+
+@media screen and (max-width: 920px) {
   .own-dish__subtitle{
       display: none;
   }
