@@ -3,10 +3,9 @@
   height: 411px;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 800px) {
   .video__iframe {
-    width: 300px;
-    height: 170px;
-    margin: 0 auto 0;
+    width: calc(100vw - 20px);
+    height: calc((100vw - 20px) * 0.5666);
   }
 }
