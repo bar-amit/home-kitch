@@ -1,7 +1,7 @@
 .footer__logo {
   width: 140px;
   height: 72px;
-  margin: 0 0 0 165px;
+  margin: 0;
 }
 
 @media screen and (max-width: 457px) {

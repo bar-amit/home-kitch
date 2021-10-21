@@ -1,10 +1,11 @@
 .footer__info {
+  min-width: 195px;
   color: white;
   display: flex;
   flex-direction: column;
   font-family: Mulish;
   font-style: normal;
-  margin: 0 auto 0 321px;
+  text-align: center;
 }
 
 @media screen and (max-width: 457px) {
