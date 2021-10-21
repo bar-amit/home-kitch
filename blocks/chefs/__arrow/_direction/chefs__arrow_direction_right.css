@@ -7,3 +7,15 @@
     right: -60px;
   }
 }
+
+@media screen and (max-width: 890px) {
+  .chefs__arrow_direction_right {
+    right: -85px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .chefs__arrow_direction_right {
+    right: -60px;
+  }
+}
