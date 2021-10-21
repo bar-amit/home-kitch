@@ -1,7 +1,6 @@
 // for media queries
 const viewport = window.innerWidth;
 
-
 /*
   Header mobile-menu:
 */
@@ -28,14 +27,13 @@ if(viewport < 457){
 */
 
 const showButton = document.querySelector(".menu__button");
-const hiddenItems = document.querySelectorAll(".dish__item_hidden");
+const dishesElement = document.querySelector(".dishes")
 
 showButton.addEventListener("click", hideOrShow);
 
 function hideOrShow(e) {
-  hiddenItems.forEach(item => {
-    item.classList.remove("dish__item_hidden");
-  });
+  dishesElement.classList.add("dishes_open")
+
   showButton.remove();
 }
 
@@ -147,8 +145,8 @@ function iterate() {
   setImage();
 }
 
-// @media screen and (min-width: 1050px)
-if(viewport > 1050){
+// @media screen and (min-width: 457px)
+if(viewport > 457){
   // restart the rotation from selected image
   toggleElements.forEach(toggle => {
     toggle.addEventListener("click", function (e) {
@@ -156,11 +154,10 @@ if(viewport > 1050){
       startRotate(e.target.getAttribute("data-key"));
     });
   });
-
-  // initialize rotation
-  startRotate(0);
-
 }
+
+// initialize rotation
+startRotate(0);
 
 /*
   Chefs Gallery:
@@ -171,14 +168,72 @@ const cards = document.querySelectorAll(".chefs__card");
 const rightButton = document.querySelector(".chefs__arrow_direction_right");
 const leftButton = document.querySelector(".chefs__arrow_direction_left");
 
-// @media screenWidth >/< 1000)
-const cardWidth = viewport > 1000 ? 285 : 265;
+const views = {
+  'min-width-1280px': {
+    cardWidth: 285,
+    groupSize: 4
+  },
+  'max-width-1280px': {
+    cardWidth: 285,
+    groupSize: 3
+  },
+  'max-width-1000px': {
+    cardWidth: 265,
+    groupSize: 3
+  },
+  'max-width-890px': {
+    cardWidth: 285,
+    groupSize: 2
+  },
+  'max-width-640px': {
+    cardWidth: 265,
+    groupSize: 2
+  },
+  'max-width-600px': undefined
+};
 
-// @media screenWidth >/< 1280)
-const groupSize = viewport > 1280 ? 4 : 3;
+const slider = initializeSliderView(viewport);
+slider.initialize();
 
-if (viewport > 457){
-  const slider = new Slider(
+window.onresize = function(){
+  const windowWidth = window.innerWidth;
+
+  if(windowWidth <= 600)
+    {
+      slider.stop();
+      return;
+    }
+
+  const {cardWidth, groupSize} = getViewParams(windowWidth);
+  slider.setNewParams({ elementWidth: cardWidth, amountOfItems: groupSize });
+}
+
+function initializeSliderView(viewWidth){
+  const {cardWidth, groupSize} = getViewParams(viewWidth);
+
+  return generateSlider(cardWidth, groupSize);
+}
+
+function getViewParams(viewWidth){
+  if(1280 < viewWidth)
+    return views['min-width-1280px'];
+  else if(1280 >= viewWidth && viewWidth > 1000)
+    return views['max-width-1280px'];
+  else if(1000 >= viewWidth && viewWidth > 890)
+    return views['max-width-1000px'];
+  else if(890 >= viewWidth && viewWidth > 640)
+    return views['max-width-890px'];
+  else if(640 >= viewWidth && viewWidth > 600)
+    return views['max-width-640px'];
+  else
+    return {
+      cardWidth: undefined,
+      groupSize: undefined
+    };
+}
+
+function generateSlider(cardWidth, groupSize) {
+  return new Slider(
     cards,
     {
       leftControler: leftButton,
@@ -189,6 +244,4 @@ if (viewport > 457){
       initialPosition: 0,
       amountOfItems: groupSize
     });
-
-  slider.initialize();
 }

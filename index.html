@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Jam</title>
+    <title>Home Kitchen</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
@@ -18,8 +18,10 @@
         <p class="header__info-number">8-700-20-10</p>
         <p class="header__info-hours">Every day from 8 to 22</p>
       </div>
-      <div class="header__burger"></div>
-
+      <svg class="header__burger" width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.9375 0.42627H0.3125C0.140625 0.42627 0 0.566895 0 0.73877V3.23877C0 3.41064 0.140625 3.55127 0.3125 3.55127H30.9375C31.1094 3.55127 31.25 3.41064 31.25 3.23877V0.73877C31.25 0.566895 31.1094 0.42627 30.9375 0.42627ZM30.9375 24.8013H0.3125C0.140625 24.8013 0 24.9419 0 25.1138V27.6138C0 27.7856 0.140625 27.9263 0.3125 27.9263H30.9375C31.1094 27.9263 31.25 27.7856 31.25 27.6138V25.1138C31.25 24.9419 31.1094 24.8013 30.9375 24.8013ZM30.9375 12.6138H0.3125C0.140625 12.6138 0 12.7544 0 12.9263V15.4263C0 15.5981 0.140625 15.7388 0.3125 15.7388H30.9375C31.1094 15.7388 31.25 15.5981 31.25 15.4263V12.9263C31.25 12.7544 31.1094 12.6138 30.9375 12.6138Z" fill="black"/>
+        </svg>
+        
     </header>
     <main class="main">
       <section class="welcome">
@@ -121,12 +123,7 @@
           </div>
           <p class="dishes__description">Mamma Mia, this is a real Neapolitan pizza. Grandpa Tony has been making it for 40 years and told us about the main secrets. You really can't stop eating, so order two at once.</p>
         </li>
-
-        <button class="menu__button">
-          <img src="./images/arrow_down.svg" alt="Arrow down" class="menu__button-img">
-        </button>
-
-        <li class="dishes__item dish__item_hidden">
+        <li class="dishes__item">
           <img src="./images/dish__image4.png" alt="Mexican Spicy Bowl" class="dishes__image">
           <div class="dishes__details">
             <div class="dishes__content">
@@ -137,7 +134,7 @@
           </div>
           <p class="dishes__description">Traditional food of Tijuana workers. Simple, but very tasty and healthy. Oh and very spicy</p>
         </li>
-        <li class="dishes__item dish__item_hidden">
+        <li class="dishes__item">
           <img src="./images/dish__image5.png" alt="Mr. Jim Buffalo Chicken" class="dishes__image">
           <div class="dishes__details">
             <div class="dishes__content">
@@ -149,7 +146,7 @@
           <p class="dishes__description">This is the chicken that goes best with beer.
             Mr. Jim in Texas gathers 500 people for his BBQ parties and he knows exactly how to cook an unforgettable chicken.</p>
         </li>
-          <li class="dishes__item dish__item_hidden">
+          <li class="dishes__item">
           <img src="./images/dish__image6.png" alt="Moma Ella's apple pie" class="dishes__image">
           <div class="dishes__details">
             <div class="dishes__content">
@@ -161,7 +158,9 @@
           <p class="dishes__description">This is a warm, sweet, juicy, apple pie from the Austrian countryside. You will not forget this taste, because this recipe is already 50 years old, but no one has yet said that it is tasteless.</p>
         </li>
       </ul>
-
+      <button class="menu__button">
+        <img src="./images/arrow_down.svg" alt="Arrow down" class="menu__button-img">
+      </button>
       </section>
 
       <section class="own-dish" id="own-dish">

@@ -7,7 +7,7 @@
   color: #9E9E9E;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 920px) {
   .own-dish__label {
     display: none;
   }

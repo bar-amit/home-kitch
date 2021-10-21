@@ -14,17 +14,17 @@
 
 @media screen and (max-width: 1250px) {
   .own-dish {
-    padding: 0 5%;
+    padding: 3% 5%;
   }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1050px) {
   .own-dish {
     padding: 2% 1%;
   }
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 920px) {
   .own-dish {
     position: relative;
     display: flex;

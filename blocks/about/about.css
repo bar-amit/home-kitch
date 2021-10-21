@@ -1,12 +1,20 @@
 .about {
   display: flex;
+  justify-content: space-between;
   padding: 60px 165px 90px;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 1440px) {
+  .about {
+    padding: 60px 11.5% 90px;
+
+  }
+}
+
+@media screen and (max-width: 670px) {
   .about {
     flex-direction: column;
     justify-content: center;
-    padding: 0;
+    padding: 20px 0;
   }
 }

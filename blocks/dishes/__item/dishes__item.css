@@ -1,12 +1,11 @@
 .dishes__item {
   max-width: 350px;
   min-height: 460px;
-  margin: 15px;
+  position: relative;
 }
 
 @media screen and (max-width: 457px) {
   .dishes__item {
-    margin: 0 auto 0;
     min-height: 470px;
   }
 }

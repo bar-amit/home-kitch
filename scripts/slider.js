@@ -7,9 +7,21 @@ class Slider {
     this._position = initialPosition;
     this._groupSize = amountOfItems;
   }
+  stop = () => {
+    this._position = 0;
+    this._move();
+    this._removeEventListeners();
+  }
+  setNewParams = ({ elementWidth, amountOfItems }) => {
+    this._step = elementWidth;
+    this._groupSize = amountOfItems;
+    this.initialize();
+  }
   initialize = () => {
     this._setEventListeners();
     this._move();
+    this._showController(this._left);
+    this._showController(this._right);
     // if: leftmost position
     if(this._position === 0){
       this._hideController(this._left);
@@ -53,5 +65,9 @@ class Slider {
   _setEventListeners = () => {
     this._left.addEventListener('click', this._handleLeft);
     this._right.addEventListener('click', this._handleRight);
+  }
+  _removeEventListeners = () => {
+    this._left.removeEventListener('click', this._handleLeft);
+    this._right.removeEventListener('click', this._handleRight);
   }
 }

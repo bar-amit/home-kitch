@@ -22,3 +22,17 @@
     margin: 0 calc((100% - 785px) / 2);
   }
 }
+
+@media screen and (max-width: 890px){
+  .chefs__carousel{
+    width: 540px;
+    margin: 0 calc((100% - 540px) / 2);
+  }
+}
+
+@media screen and (max-width: 640px){
+  .chefs__carousel{
+    width: 520px;
+    margin: 0 calc((100% - 520px) / 2);
+  }
+}

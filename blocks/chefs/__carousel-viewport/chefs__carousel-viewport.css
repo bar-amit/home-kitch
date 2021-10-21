@@ -20,7 +20,19 @@
   }
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 890px) {
+  .chefs__carousel-viewport {
+    gap: 30px
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .chefs__carousel-viewport {
+    gap: 10px
+  }
+}
+
+@media screen and (max-width: 600px) {
   .chefs__carousel-viewport {
     flex-direction: column;
     overflow: auto;

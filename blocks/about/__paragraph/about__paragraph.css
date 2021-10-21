@@ -8,11 +8,17 @@
   margin: 0 0 20px;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 1000px) {
+  .about__paragraph {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 670px) {
   .about__paragraph {
     margin: 10px 0 0;
     padding: 0 10px 0;
-    font-size: 14px;
-    line-height: 20px;
   }
 }

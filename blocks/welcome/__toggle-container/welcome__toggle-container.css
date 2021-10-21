@@ -17,6 +17,28 @@
 
 @media screen and (max-width: 1250px){
   .welcome__toggle-container {
+    transform: rotate(90deg);
+    left: auto;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    margin: 0;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px 10px;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .welcome__toggle-container {
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 457px){
+  .welcome__toggle-container {
     display: none;
   }
 }

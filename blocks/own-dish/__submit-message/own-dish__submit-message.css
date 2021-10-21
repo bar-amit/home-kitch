@@ -8,7 +8,7 @@
   grid-row: 6/7;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 920px) {
   .own-dish__submit-message {
     margin: 0 10px;
     height: 300px;

@@ -15,7 +15,7 @@
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 457px) {
+@media screen and (max-width: 920px) {
   .own-dish__message {
     width: 100%;
   }
